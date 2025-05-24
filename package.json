@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-  "export": "next export",
+    
+  "deploy": "npm run build",
     "start": "next start"
   },
   "keywords": [],

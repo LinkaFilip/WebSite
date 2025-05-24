@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // to je nová cesta místo next export
-  // další config dle potřeby
+  output: 'export',  // tohle je novinka místo next export
+  // další nastavení...
 }
 
 module.exports = nextConfig;

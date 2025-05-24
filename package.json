@@ -12,7 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "next": "^15.1.8",
+    "next": "build",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }

@@ -135,7 +135,7 @@ nav .nav-section {
 }
 
 #nav-logo-section {
-    flex-basis: calc(100% * 0,95);
+    flex-basis: calc(100% /2.75);
     justify-content: flex-start;
 }
 

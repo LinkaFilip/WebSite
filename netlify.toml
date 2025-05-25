@@ -5,3 +5,12 @@
   from = "/contact"
   to = "/index.html"
   status = 200
+
+  
+  from = "/main"
+  to = "/index.html"
+  status = 200
+
+  from = "/work"
+  to = "/index.html"
+  status = 200

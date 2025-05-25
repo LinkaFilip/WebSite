@@ -1,2 +1,7 @@
 [build]
   publish = "main"
+
+[[redirects]]
+  from = "/contact"
+  to = "/index.html"
+  status = 200

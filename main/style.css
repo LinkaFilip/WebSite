@@ -211,29 +211,12 @@ main>article>.article-title-section, main>article>.article-nav-section {
     border-top: 1px solid var(--border-color);
 }
 
-main>article:first-child>.article-image-section>img{
+main>article>.article-image-section>img{
     object-fit: contain;
     width: 100%;
     object-position: bottom;
     background-color: white;
 }
-
-main>article:nth-child(2)>.article-image-section {
-    background-image: url("");
-}
-
-main>article:nth-child(3)>.article-image-section {
-    background-image: url("");
-}
-
-main>article:nth-child(4)>.article-image-section {
-    background-image: url("");
-}
-
-main>article:nth-child(5)>.article-image-section {
-    background-image: url("");
-}
-
 main>article>.article-image-section {
     background-position: center;
     background-size: cover;

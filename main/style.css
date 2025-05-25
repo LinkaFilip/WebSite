@@ -290,7 +290,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     #nav-logo-section {
-        flex-basis: calc(100% * 0.25);
+        flex-basis: calc(100%);
     }
 
     #nav-link-section {

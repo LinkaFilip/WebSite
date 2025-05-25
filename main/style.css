@@ -417,6 +417,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
 
     main>article>.article-description-section {
         padding: 2rem;
+        line-height: 2rem;
     }
 
     main>article>.article-description-section>p {

@@ -1,17 +1,2 @@
 [build]
   publish = "main"
-
-[[redirects]]
-  from = "/contact"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/main"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/work"
-  to = "/index.html"
-  status = 200

@@ -1,7 +1,6 @@
 let activeIndex = 0;
 
 const article = document.getElementsByTagName("article");
-const element = document.getElementById("#toggle");
 
 const handleLeftClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : article.length - 1;
@@ -34,6 +33,7 @@ const handleRightClick = () => {
     activeIndex = nextIndex;
   }, 0);
 }
+const image = document.getElementsByTagName("img");
 
 function functionToggle() {
   const element = document.querySelector('.light-mode, .dark-mode');
@@ -43,5 +43,8 @@ function functionToggle() {
     element.classList.replace('light-mode', 'dark-mode');
   } else {
     element.classList.replace('dark-mode', 'light-mode');
+  }
+  if (element.classList = ".dark-mode"){
+    image.style.filter = "inverse(100%)";
   }
 }

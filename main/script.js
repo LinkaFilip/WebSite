@@ -33,7 +33,7 @@ const handleRightClick = () => {
     activeIndex = nextIndex;
   }, 0);
 }
-const image = document.getElementsByTagName("img");
+const image = document.querySelector("img")
 
 function functionToggle() {
   const element = document.querySelector('.light-mode, .dark-mode');
@@ -44,7 +44,7 @@ function functionToggle() {
   } else {
     element.classList.replace('dark-mode', 'light-mode');
   }
-  if (element.classList = ".dark-mode"){
+  if (element.classList.contains(".dark-mode")){
     image.style.filter = "inverse(100%)";
   }
 }

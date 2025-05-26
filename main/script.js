@@ -1,7 +1,7 @@
 let activeIndex = 0;
 
 const article = document.getElementsByTagName("article");
-const image = document.getElementsByTagName("img");
+const toggle = document.getElementsById("#toggle");
 
 const handleLeftClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : article.length - 1;
@@ -36,5 +36,5 @@ const handleRightClick = () => {
 }
 
 function functionToggle(){
-  image.classList.replace('.dark-mode');
+  toggle.classList.replace('.dark-mode');
 }

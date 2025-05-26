@@ -151,24 +151,6 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
-main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    flex-grow: 1;
-    position: relative;
-    color: white;
-    font-family: "Mandator";
-}
-.container{
-    width: 320px;
-    height: 200px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-}
 @media(max-width: 1200px) {
     #nav-mobile-section {
         flex-basis: calc(100% * 0.75);
@@ -277,4 +259,48 @@ main{
     right: -150px;
     width: 100px;
     height: 100px;
+}
+
+
+#product-table {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    gap: 2rem;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responzivní zobrazení na mobilu */
+@media (max-width: 600px) {
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+
+    .product-name {
+        font-size: 1rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
 }

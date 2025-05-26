@@ -232,7 +232,9 @@ nav .nav-section {
     background: var(--border-color);
     border-radius: 10px;
 }
-
+#main{
+    padding-top: 120px;
+}
 .nav {
     position: absolute;
     top: 50%;
@@ -259,48 +261,33 @@ nav .nav-section {
     right: -150px;
     width: 100px;
     height: 100px;
+}#main {
+  padding-top: 120px; /* Aby nezačínalo pod navigací */
+  padding-inline: 2rem;
 }
 
-
-#product-table {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 sloupce, přizpůsobivé */
+  gap: 2rem;
 }
 
-.product-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
-    gap: 2rem;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.product-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: white;
+.item img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
-.product-description {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* Responzivní zobrazení na mobilu */
-@media (max-width: 600px) {
-    .product-row {
-        grid-template-columns: 1fr;
-    }
-
-    .product-name {
-        font-size: 1rem;
-    }
-
-    .product-description {
-        font-size: 0.9rem;
-    }
+.item h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }

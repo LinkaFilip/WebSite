@@ -35,6 +35,13 @@ const handleRightClick = () => {
   }, 0);
 }
 
-function functionToggle(){
-  toggle.classList.replace('.dark-mode');
+function functionToggle() {
+  const element = document.querySelector('.light-mode, .dark-mode');
+  if (!element) return; // ochrana proti null
+
+  if (element.classList.contains('light-mode')) {
+    element.classList.replace('light-mode', 'dark-mode');
+  } else {
+    element.classList.replace('dark-mode', 'light-mode');
+  }
 }

@@ -60,5 +60,5 @@ function functionToggle() {
     });
   }
   
-  element.style.backgroundColor = '#90ee90'; // světle zelená
+  element.style.backgroundColor = 'rgb(5,10, 24)'; // světle zelená
 }

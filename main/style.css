@@ -227,7 +227,6 @@ main>article>.article-image-section>img{
     width: 100%;
     object-position: bottom;
     background-color: white;
-    filter: invert(100%);
 }
 main>article>.article-image-section {
     background-position: center;

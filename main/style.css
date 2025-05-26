@@ -251,10 +251,14 @@ main>article>.article-description-section>span{
     font-family: 'MandatorBold';
 }
 main>article>.article-description-section>button{
-    height: 120px;
+    height: 40px;
     outline: none;
-    border: none;
-    background-color: var(--border-color);
+    border: 2px solid var(--border-color);
+    margin-top: 3rem;
+    background-color: var(--background-color);
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
 }
 main>article>.article-description-section>button:hover{
     background-color: var(--highlight-color);

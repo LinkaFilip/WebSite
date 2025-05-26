@@ -47,18 +47,4 @@ function functionToggle() {
   } else {
     element.classList.replace('dark-mode', 'light-mode');
   }
-
-  // Invertuj barvy u všech obrázků, pokud je dark mode aktivní
-  const images = document.querySelectorAll("img");
-  if (element.classList.contains("dark-mode")) {
-    images.forEach(img => {
-      img.style.filter = "invert(100%)";
-    });
-  } else {
-    images.forEach(img => {
-      img.style.filter = "invert(0%)";
-    });
-  }
-  
-  element.style.backgroundColor = 'rgb(5,10, 24)'; // světle zelená
 }

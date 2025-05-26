@@ -582,8 +582,3 @@ side {
     z-index: 10;
     border: 1px solid #2c3a47;
 }
-#random {
-  display: inline-block;
-  padding: 20px;
-  background-color: white;
-}

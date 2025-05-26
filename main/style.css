@@ -248,8 +248,7 @@ main>article>.article-description-section>p>a:hover {
     text-decoration: underline;
 }
 main>article>.article-description-section>span{
-    font-family: 'Mandator';
-    font-style: bold;
+    font-family: 'MandatorBold';
 }
 main>article>.article-title-section {
     align-items: center;

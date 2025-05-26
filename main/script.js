@@ -1,7 +1,7 @@
 let activeIndex = 0;
 
 const article = document.getElementsByTagName("article");
-const toggle = document.getElementById("#toggle");
+const element = document.getElementById("#toggle");
 
 const handleLeftClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : article.length - 1;

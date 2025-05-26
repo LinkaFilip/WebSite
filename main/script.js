@@ -37,14 +37,24 @@ const image = document.querySelector("img")
 
 function functionToggle() {
   const element = document.querySelector('.light-mode, .dark-mode');
-  if (!element) return; // ochrana proti null
+  if (!element) return;
 
+  // Přepnutí třídy
   if (element.classList.contains('light-mode')) {
     element.classList.replace('light-mode', 'dark-mode');
   } else {
     element.classList.replace('dark-mode', 'light-mode');
   }
-  if (element.classList.contains(".dark-mode")){
-    image.style.filter = "inverse(100%)";
+
+  // Invertuj barvy u všech obrázků, pokud je dark mode aktivní
+  const images = document.querySelectorAll("img");
+  if (element.classList.contains("dark-mode")) {
+    images.forEach(img => {
+      img.style.filter = "invert(100%)";
+    });
+  } else {
+    images.forEach(img => {
+      img.style.filter = "invert(0%)";
+    });
   }
 }

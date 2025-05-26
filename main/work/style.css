@@ -151,12 +151,16 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
-#main{
+main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    flex-grow: 1;
+    position: relative;
+    color: white;
+    font-family: "Mandator";
 }
 .container{
     width: 320px;

@@ -60,6 +60,8 @@ body {
     box-sizing: border-box;
     user-select: none;
     text-decoration: none;
+    font-family: 'Mandator';
+    color: white;
 }
 
 h1, h2, h3, a, p, span {

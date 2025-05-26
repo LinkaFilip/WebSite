@@ -250,6 +250,15 @@ main>article>.article-description-section>p>a:hover {
 main>article>.article-description-section>span{
     font-family: 'MandatorBold';
 }
+main>article>.article-description-section>button{
+    height: 120px;
+    outline: none;
+    border: none;
+    background-color: var(--border-color);
+}
+main>article>.article-description-section>button:hover{
+    background-color: var(--highlight-color);
+}
 main>article>.article-title-section {
     align-items: center;
     justify-content: space-between;

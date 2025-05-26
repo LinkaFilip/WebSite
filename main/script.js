@@ -33,7 +33,9 @@ const handleRightClick = () => {
     activeIndex = nextIndex;
   }, 0);
 }
-const image = document.querySelector("img")
+const image = document.querySelector("img");
+
+  const element = document.getElementById('random');
 
 function functionToggle() {
   const element = document.querySelector('.light-mode, .dark-mode');
@@ -57,4 +59,6 @@ function functionToggle() {
       img.style.filter = "invert(0%)";
     });
   }
+  
+  element.style.backgroundColor = '#90ee90'; // světle zelená
 }

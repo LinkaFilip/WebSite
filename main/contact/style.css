@@ -70,14 +70,6 @@ h1, h2, h3, a, p, span {
 }
 
 
-a:hover {
-    color: var(--highlight-color);
-}
-
-img {
-    width: 32px;
-}
-
 nav {
     position: fixed;
     display: flex;
@@ -151,7 +143,12 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
-
+#main{
+    position: absolute;
+    margin: 120px;
+}
+span{    
+}
 @media(max-width: 1200px) {
     #nav-mobile-section {
         flex-basis: calc(100% * 0.75);

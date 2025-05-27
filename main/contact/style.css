@@ -144,7 +144,8 @@ nav .nav-section {
     gap: 3rem;
 }
 #main{
-    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 span{    
     margin: 120px;

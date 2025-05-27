@@ -144,10 +144,10 @@ nav .nav-section {
     gap: 3rem;
 }
 #main{
-    position: absolute;
-    margin: 120px;
+    position: relative;
 }
 span{    
+    margin: 120px;
 }
 @media(max-width: 1200px) {
     #nav-mobile-section {

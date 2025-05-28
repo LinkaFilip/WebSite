@@ -144,9 +144,10 @@ nav .nav-section {
     padding-bottom: 45px;
 }
 #main>container>text-holder>h4{
-    font-size: 1.5rem;
-    padding-bottom: 15px;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.9);
 }
+
 
 #main>container>text-holder>p{
     width: 400px;

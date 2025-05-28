@@ -127,6 +127,7 @@ nav .nav-section {
     margin-left: 75px;
     margin-right: 75px;
     display: flex;
+    flex-direction: column;
 }
 #main>container>text-holder{    
     width: 50%;
@@ -136,7 +137,7 @@ nav .nav-section {
 #main>container>text-holder>p{
     width: 400px;
 }
-#main>container>img{    
+#main>img{    
     width: 50%;
     display: flex;
     margin-left: 15px;

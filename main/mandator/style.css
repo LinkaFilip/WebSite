@@ -86,17 +86,17 @@ nav .nav-section {
     gap: 3rem;
 }
 
-main {
+#main {
     flex-grow: 1;
     position: relative;
     color: white;
     font-family: "Mandator";
     top: 120px;
 }
-main>container{
+#main>container{
     position: absolute;
     margin-left: 75px;
 }
-main>container>p{
+#main>container>p{
     width: 400px;
 }

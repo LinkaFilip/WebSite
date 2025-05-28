@@ -137,11 +137,14 @@ nav .nav-section {
     flex-direction: column;
 }
 #main>container>text-holder>h2{
+    font-size: 3rem;
     position: relative;
+    padding-bottom: 45px;
 }
 
 #main>container>text-holder>p{
     width: 400px;
+    line-height: 1.55rem;
 }
 #main>img{     
     width: 50%;

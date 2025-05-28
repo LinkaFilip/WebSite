@@ -56,13 +56,11 @@ nav .nav-section {
     align-items: center;
     justify-content: center;
 }
-
 #nav-mobile-section {
     display: flex;
-    flex-basis: calc(100% * (2 / 1));
+    flex-basis: calc(100% * (2 / 3));
     z-index: 2;
 }
-
 #nav-toggle-button {
     align-items: center;
     background-color: transparent;

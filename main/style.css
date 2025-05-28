@@ -264,6 +264,8 @@ main>article>.article-description-section>.button>.button {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    outline: 1px solid var(--border-color);
+    border-radius: 6px;
 }
 
 main>article>.article-description-section>button:hover{

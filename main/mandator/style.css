@@ -122,6 +122,8 @@ nav .nav-section {
     font-family: "Mandator";
     top: 120px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 #main>#first{
     height: 100vh;
@@ -168,8 +170,14 @@ nav .nav-section {
     margin-right: 75px;
     margin-top: 103px;
 }
-#main>#first>image-container>img{     
+#main>image-container>img{     
     width: 100%;
+}
+#main>#second{    
+    height: 100vh;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 

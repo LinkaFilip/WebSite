@@ -121,13 +121,13 @@ nav .nav-section {
     color: white;
     font-family: "Mandator";
     top: 120px;
-    display: flex;
-    flex-direction: row;
     margin-top: 40px;
 }
 #main>#first{
     height: 100vh;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
 }
 #main>#first>container{
     position: relative;
@@ -171,6 +171,18 @@ nav .nav-section {
 #main>#first>image-container>img{     
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 800px){
     #main>container{

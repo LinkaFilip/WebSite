@@ -126,6 +126,6 @@ nav .nav-section {
     position: absolute;
     margin-left: 75px;
 }
-#main>container>p{
+#main>container>text-holder>p{
     width: 400px;
 }

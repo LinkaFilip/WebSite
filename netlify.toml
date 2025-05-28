@@ -1,2 +1,8 @@
 [build]
   publish = "main"
+
+  
+[[redirects]]
+  from = "/mandator"
+  to = "/mandator/index.html"
+  status = 200

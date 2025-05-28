@@ -121,25 +121,31 @@ nav .nav-section {
     color: white;
     font-family: "Mandator";
     top: 120px;
+    display: flex;
+    flex-direction: row;
 }
 #main>container{
-    position: absolute;
+    position: relative;
     margin-left: 75px;
     margin-right: 75px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 #main>container>text-holder{    
     width: 50%;
     display: flex;
     flex-direction: column;
 }
+#main>container>text-holder>h2{
+    position: relative;
+}
+
 #main>container>text-holder>p{
     width: 400px;
 }
-#main>img{    
+#main>img{     
     width: 50%;
-    display: flex;
     margin-left: 15px;
-    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
 }

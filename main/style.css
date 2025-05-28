@@ -81,10 +81,6 @@ h1, h2, h3, a, p, span {
 }
 
 
-a:hover {
-    color: var(--highlight-color);
-}
-
 img {
     width: 32px;
 }

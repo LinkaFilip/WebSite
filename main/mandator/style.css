@@ -147,6 +147,7 @@ nav .nav-section {
 #main>container>text-holder>p{
     width: 400px;
     line-height: 1.55rem;
+    font-size: 1rem;
     line-break: normal;
     text-indent: 50px;
 }
@@ -159,4 +160,11 @@ nav .nav-section {
 }
 #main>image-container>img{     
     width: 100%;
+}
+
+@media(max-width: 800px){
+    #main>container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

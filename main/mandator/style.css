@@ -91,8 +91,12 @@ main {
     position: relative;
     color: white;
     font-family: "Mandator";
+    top: 120px;
 }
 main>container{
     position: absolute;
     margin-left: 75px;
+}
+main>container>p{
+    width: 400px;
 }

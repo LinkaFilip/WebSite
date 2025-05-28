@@ -92,3 +92,7 @@ main {
     color: white;
     font-family: "Mandator";
 }
+main>container{
+    position: absolute;
+    margin-left: 75px;
+}

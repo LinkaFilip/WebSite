@@ -125,7 +125,19 @@ nav .nav-section {
 #main>container{
     position: absolute;
     margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+}
+#main>container>text_holder{    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 #main>container>text-holder>p{
     width: 400px;
+}
+#main>container>img{    
+    width: 50%;
+    display: flex;
+    margin-left: 15px;
 }

@@ -13,6 +13,30 @@
     --border-color: rgb(255, 255, 255, 0.1);
     --highlight-color: rgb(24, 47, 76);
 }
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: 'Mandator', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+}
+
+
 nav {
     position: fixed;
     display: flex;

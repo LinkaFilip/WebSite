@@ -123,12 +123,12 @@ nav .nav-section {
     top: 120px;
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
 }
 #main>container{
     position: relative;
     margin-left: 75px;
     margin-right: 75px;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
 }
@@ -147,6 +147,7 @@ nav .nav-section {
     width: 400px;
     line-height: 1.55rem;
     line-break: normal;
+    text-indent: 20px;
 }
 #main>img{     
     width: 50%;

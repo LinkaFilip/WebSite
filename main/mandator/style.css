@@ -125,7 +125,7 @@ nav .nav-section {
     flex-direction: row;
     margin-top: 40px;
 }
-#main>#second{
+#main>#first{
     height: 100vh;
     padding-bottom: 30px;
 }

@@ -265,7 +265,7 @@ main>article>.article-description-section>.button>.button {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
-}
+
 main>article>.article-description-section>button:hover{
     background-color: rgba(255, 255, 255, 0.02);
 }

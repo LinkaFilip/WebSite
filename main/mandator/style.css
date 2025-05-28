@@ -85,3 +85,10 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
+
+main {
+    flex-grow: 1;
+    position: relative;
+    color: white;
+    font-family: "Mandator";
+}

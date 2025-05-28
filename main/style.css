@@ -254,15 +254,17 @@ main>article>.article-description-section>p>a:hover {
 main>article>.article-description-section>span{
     font-family: 'MandatorBold';
 }
-main>article>.article-description-section>button{
-    height: 40px;
-    outline: none;
-    border: 2px solid var(--border-color);
-    margin-top: 3rem;
-    background-color: var(--background-color);
-    color: white;
-    font-size: 1rem;
-    border-radius: 8px;
+main>article>.article-description-section>.button>.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 }
 main>article>.article-description-section>button:hover{
     background-color: rgba(255, 255, 255, 0.02);

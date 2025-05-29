@@ -245,7 +245,7 @@ nav .nav-section {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 sloupce, přizpůsobivé */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -259,8 +259,6 @@ nav .nav-section {
 .item img {
   width: 100%;
   height: auto;
-  max-width: 400px;
-  border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 

@@ -269,6 +269,9 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     border-left: 1px solid var(--border-color);
 }
 @media(max-width: 1200px) {
+    *{
+        font-family: "Mandator", sans-serif;
+    }
     #nav-mobile-section {
         flex-basis: calc(100% * 0.75);
     }
@@ -329,6 +332,9 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
 }
 
 @media(max-width: 800px) {
+    *{
+        font-family: "Mandator", sans-serif;
+    }
     nav {
         justify-content: space-between;
     }

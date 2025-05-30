@@ -185,7 +185,60 @@ img{
 
 
 
-@media(max-width: 800px){
+@media(max-width: 800px){nav {
+        justify-content: space-between;
+    }
+
+    nav[data-toggled="true"]>#nav-mobile-section {
+        transform: translateY(0%);
+    }
+
+    nav[data-toggled="true"]>#nav-toggle-button {
+        border-left: none;
+    }
+
+    nav[data-transitionable="true"]>#nav-mobile-section {
+        transition: transform 400ms ease;
+    }
+
+    nav .nav-section {
+        border-left: none;
+        padding: 1.5rem 1rem;
+    }
+
+    #nav-logo-section>a>i {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    #nav-mobile-section {
+        background-color: var(--background-color);
+        flex-direction: column;
+        position: relative;
+    }
+
+    #nav-toggle-button {
+        display: flex;
+    }
+
+    #nav-link-section {
+       display: flex;
+       flex-direction: row;
+       font-size: 0.5rem;
+       justify-content: flex-end;
+    }
+
+    #nav-link-section>a {
+        font-size: 3rem;
+    }
+
+    #nav-social-section>a {
+        font-size: 2rem;
+    }
+
+    #nav-contact-section {
+        padding-bottom: 4rem;
+    }
     #main>container{
         margin-left: 20px;
         margin-right: 20px;

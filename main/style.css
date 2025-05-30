@@ -268,12 +268,10 @@ main>article>.article-nav-section>.article-nav-button:hover {
 main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     border-left: 1px solid var(--border-color);
 }
-
 @media(max-width: 1200px) {
     #nav-mobile-section {
         flex-basis: calc(100% * 0.75);
     }
-
     #nav-logo-section {
         flex-basis: calc(100%);
     }
@@ -311,6 +309,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     main>article>.article-image-section {
         order: 1;
         height: 100%;
+        padding-top: 70px;
     }
 
     main>article>.article-title-section {
@@ -359,10 +358,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     #nav-mobile-section {
         background-color: var(--background-color);
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        transform: translateY(-100%);
+        position: relative;
     }
 
     #nav-toggle-button {
@@ -370,9 +366,10 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     #nav-link-section {
-        flex-basis: 60%;
-        flex-direction: column;
-        gap: 4rem;
+       display: flex;
+       flex-direction: row;
+       font-size: 0.5rem;
+       justify-content: flex-end;
     }
 
     #nav-link-section>a {

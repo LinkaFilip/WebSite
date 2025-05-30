@@ -206,10 +206,7 @@ span{
     #nav-mobile-section {
         background-color: var(--background-color);
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        transform: translateY(-100%);
+        position: relative;
     }
 
     #nav-toggle-button {
@@ -217,9 +214,10 @@ span{
     }
 
     #nav-link-section {
-        flex-basis: 60%;
-        flex-direction: column;
-        gap: 4rem;
+       display: flex;
+       flex-direction: row;
+       font-size: 0.5rem;
+       justify-content: flex-end;
     }
 
     #nav-link-section>a {

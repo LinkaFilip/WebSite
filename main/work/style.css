@@ -116,7 +116,7 @@ nav .nav-section {
     }
 
     #nav-logo-section {
-        flex-basis: calc(100% * 0.25);
+        flex-basis: calc(100% * 0.3);
     }
 
     #nav-link-section {

@@ -125,6 +125,62 @@ nav .nav-section {
     }
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 10px;
+}
+#main{
+    padding-top: 120px;
+}
+.nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-color: rgba(150, 150, 150, .3);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    user-select: none;
+}
+
+.nav-left {
+    left: -150px;
+    width: 100px;
+    height: 100px;
+}
+
+.nav-right {
+    right: -150px;
+    width: 100px;
+    height: 100px;
+}#main {
+  padding-top: 120px; /* Aby nezačínalo pod navigací */
+  padding-inline: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 stejně široké sloupce */
+  gap: 50px; /* mezera mezi obrázky */
+}
+
+.grid img {
+  width: 100%;
+  height: auto;        /* zachová poměr stran */
+  display: block;      /* odstraní bílé mezery pod obrázky */
+  object-fit: cover;   /* přizpůsobí se rámečku, můžeš vypnout */
+  padding-bottom: 30px;
+}
+
 @media(max-width: 800px) {
     nav {
         justify-content: space-between;
@@ -185,58 +241,4 @@ nav .nav-section {
     .grid{
         grid-template-columns: repeat(2, 1fr); /* 3 stejně široké sloupce */
     }
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 10px;
-}
-#main{
-    padding-top: 120px;
-}
-.nav {
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    background-color: rgba(150, 150, 150, .3);
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    color: white;
-    user-select: none;
-}
-
-.nav-left {
-    left: -150px;
-    width: 100px;
-    height: 100px;
-}
-
-.nav-right {
-    right: -150px;
-    width: 100px;
-    height: 100px;
-}#main {
-  padding-top: 120px; /* Aby nezačínalo pod navigací */
-  padding-inline: 2rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 stejně široké sloupce */
-  gap: 50px; /* mezera mezi obrázky */
-}
-
-.grid img {
-  width: 100%;
-  height: auto;        /* zachová poměr stran */
-  display: block;      /* odstraní bílé mezery pod obrázky */
-  object-fit: cover;   /* přizpůsobí se rámečku, můžeš vypnout */
-  padding-bottom: 30px;
 }

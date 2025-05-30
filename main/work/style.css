@@ -171,6 +171,7 @@ nav .nav-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 stejně široké sloupce */
   gap: 50px; /* mezera mezi obrázky */
+  padding-bottom: 50px;
 }
 
 .grid img {

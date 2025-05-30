@@ -235,7 +235,7 @@ nav .nav-section {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 stejně široké sloupce */
-  gap: 10px; /* mezera mezi obrázky */
+  gap: 50px; /* mezera mezi obrázky */
 }
 
 .grid img {
@@ -243,4 +243,5 @@ nav .nav-section {
   height: auto;        /* zachová poměr stran */
   display: block;      /* odstraní bílé mezery pod obrázky */
   object-fit: cover;   /* přizpůsobí se rámečku, můžeš vypnout */
+  padding-bottom: 30px;
 }

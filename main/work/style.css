@@ -36,14 +36,6 @@ h1, h2, h3, a, p, span {
 }
 
 
-a:hover {
-    color: var(--highlight-color);
-}
-
-img {
-    width: 32px;
-}
-
 
 nav {
     position: fixed;
@@ -189,6 +181,9 @@ nav .nav-section {
 
     #nav-contact-section {
         padding-bottom: 4rem;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr); /* 3 stejně široké sloupce */
     }
 }
 ::-webkit-scrollbar {

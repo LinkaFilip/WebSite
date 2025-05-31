@@ -1,11 +1,4 @@
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 10px;
-}#main {
+#main {
   padding-top: 120px; /* Aby nezačínalo pod navigací */
   padding-inline: 2rem;
 }

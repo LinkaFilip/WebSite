@@ -89,7 +89,7 @@ main>article>.article-description-section>span{
     font-family: 'MandatorBold';
 }
 main>article>.article-description-section>button{
-    height: 40px;
+    height: 50px;
     outline: none;
     border: 2px solid var(--border-color);
     margin-top: 3rem;

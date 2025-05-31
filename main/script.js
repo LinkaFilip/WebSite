@@ -33,18 +33,3 @@ const handleRightClick = () => {
     activeIndex = nextIndex;
   }, 0);
 }
-const image = document.querySelector("img");
-
-  const element = document.getElementById('random');
-
-function functionToggle() {
-  const element = document.querySelector('.light-mode, .dark-mode');
-  if (!element) return;
-
-  // Přepnutí třídy
-  if (element.classList.contains('light-mode')) {
-    element.classList.replace('light-mode', 'dark-mode');
-  } else {
-    element.classList.replace('dark-mode', 'light-mode');
-  }
-}

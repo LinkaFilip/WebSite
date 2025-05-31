@@ -185,7 +185,8 @@ img{
 
 
 
-@media(max-width: 800px){nav {
+@media(max-width: 800px){
+    nav {
         justify-content: space-between;
     }
 
@@ -242,5 +243,22 @@ img{
     #main>container{
         margin-left: 20px;
         margin-right: 20px;
+    }
+    #first, #second{
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    container{        
+        position: relative;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    p{
+        width: 200px;
     }
 }

@@ -246,7 +246,7 @@ img{
     #first, #second{
         padding-bottom: 30px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         position: relative;
         height: auto;
     }

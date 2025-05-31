@@ -249,6 +249,7 @@ img{
         display: flex;
         flex-direction: row;
         position: relative;
+        height: auto;
     }
     container{        
         position: relative;
@@ -260,5 +261,6 @@ img{
     }
     p{
         width: 200px;
+        text-indent: 20px;
     }
 }

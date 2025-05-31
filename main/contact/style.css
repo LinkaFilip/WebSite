@@ -130,50 +130,6 @@ span{
         flex-basis: calc(100% / 3);
         gap: 3rem;
     }
-
-    main {
-        overflow-y: visible;
-        height: fit-content;
-    }
-
-    main>article {
-        grid-template-columns: none;
-        grid-template-rows: 1.5fr repeat(3, 0.75fr) 0.25fr;
-        height: max(900px, 100%);
-        font-family: 'Mandator';
-    }
-
-    main>article>.article-title-section>h2 {
-        font-size: 3rem;
-        line-height: 2.6rem;
-    }
-
-    main>article>.article-title-section>i {
-        font-size: 3rem;
-    }
-
-    main>article>.article-description-section, main>article>.article-nav-section {
-        border-left: none;
-    }
-
-    main>article>.article-image-section {
-        order: 1;
-    }
-
-    main>article>.article-title-section {
-        border-bottom: 1px solid var(--border-color);
-        order: 2;
-    }
-
-    main>article>.article-description-section {
-        justify-content: center;
-        order: 3;
-    }
-
-    main>article>.article-nav-section {
-        border-bottom: 1px solid var(--border-color);
-        order: 4;
-    }
 }
 
 @media(max-width: 800px) {
@@ -231,55 +187,8 @@ span{
     #nav-contact-section {
         padding-bottom: 4rem;
     }
-
-    main>article {
-        grid-template-rows: 1fr repeat(4, 0.5fr);
-        height: max(700px, 100%);
-    }
-
-    main>article>.article-title-section {
-        padding: 2rem;
-    }
-
-    main>article>.article-title-section>h2 {
-        flex-basis: 70%;
-        font-size: 1.75em;
-        line-height: 1.5rem;
-    }
-
-    main>article>.article-title-section>i {
-        font-size: 2rem;
-    }
-
-    main>article>.article-description-section {
-        padding: 2rem;
-    }
-
-    main>article>.article-description-section>p {
-        font-size: 1rem;
-    }
 }
 
-/* -- YT link / Source link styles -- */
-main>article>.article-description-section>p>.source-link {
-    color: var(--highlight-color);
-    display: inline;
-}
-
-main>article .yt-link, main>article .yt-link>i {
-    color: var(--yt-color);
-    display: inline;
-}
-
-.active {
-    transition: .3s;
-    transform: rotate(90deg);
-}
-
-.unactive {
-    transition: .3s;
-    transform: rotate(0deg);
-}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -289,38 +198,6 @@ main>article .yt-link, main>article .yt-link>i {
     background: var(--border-color);
     border-radius: 10px;
 }
-
-side {
-    height: 100vh;
-}
-
-.carousel {
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    height: 300px;
-    margin: 0px auto;
-}
-
-.carousel-content {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-}
-
-.slide {
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-}
-
 .nav {
     position: absolute;
     top: 50%;
@@ -336,53 +213,13 @@ side {
     color: white;
     user-select: none;
 }
-
-.nav-left {
-    left: -150px;
-    width: 100px;
-    height: 100px;
+container{
+    display: flex;
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 200px;
+    flex-direction: column;
 }
-
-.nav-right {
-    right: -150px;
-    width: 100px;
-    height: 100px;
-}
-
-.left-button, .right-button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#cursor {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-    border: 1px solid #ffffff;
-    filter: invert(10%);
-}
-
-#cursor.hover {
-    width: 100px;
-    height: 100px;
-}
-
-.button-buynow {
-    min-width: 230px;
-    min-height: 50px;
-    background-color: #db9600;
-    border-radius: 7px;
-    position: absolute;
-    top: 60%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    border: 1px solid #2c3a47;
+span{
+    font-size: 1.5rem;
 }

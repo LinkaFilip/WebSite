@@ -107,10 +107,25 @@ nav .nav-section {
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
+    justify-content: flex-end;
 }
 
 #nav-social-section {
     gap: 3rem;
+}
+@media(max-width: 1200px) {
+    #nav-mobile-section {
+        flex-basis: calc(100% * 0.75);
+    }
+
+    #nav-logo-section {
+        flex-basis: calc(100% * 0.25);
+    }
+
+    #nav-link-section {
+        flex-basis: calc(100% / 3);
+        gap: 3rem;
+    }
 }
 @media(max-width: 800px) {
     

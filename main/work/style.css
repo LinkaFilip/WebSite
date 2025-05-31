@@ -5,36 +5,6 @@
 ::-webkit-scrollbar-thumb {
     background: var(--border-color);
     border-radius: 10px;
-}
-#main{
-    padding-top: 120px;
-}
-.nav {
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    background-color: rgba(150, 150, 150, .3);
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    color: white;
-    user-select: none;
-}
-
-.nav-left {
-    left: -150px;
-    width: 100px;
-    height: 100px;
-}
-
-.nav-right {
-    right: -150px;
-    width: 100px;
-    height: 100px;
 }#main {
   padding-top: 120px; /* Aby nezačínalo pod navigací */
   padding-inline: 2rem;

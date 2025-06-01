@@ -65,6 +65,7 @@ main>article>.article-image-section>img{
     width: 100%;
     object-position: bottom;
     background-color: white;
+    aspect-ratio: 3 / 1;
 }
 main>article>.article-image-section {
     background-position: center;

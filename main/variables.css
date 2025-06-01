@@ -171,6 +171,7 @@ QI4hOm1/MQk=);
     box-sizing: border-box;
     user-select: none;
     text-decoration: none;
+    color: white;
 }
 body {
     background-color: var(--background-color);

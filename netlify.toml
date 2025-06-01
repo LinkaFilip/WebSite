@@ -1,10 +1,10 @@
 [build]
   publish = "main"
 
-  
 [[redirects]]
   from = "/mandator"
   to = "/mandator/index.html"
   status = 200
-[plugins]
-  package = "@netlify/images"
+
+[[plugins]]
+  package = "@netlify/plugin-image-optim"

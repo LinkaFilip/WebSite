@@ -27,12 +27,12 @@ text-holder{
     display: flex;
     flex-direction: column;
 }
-h2{
+h1{
     font-size: 3rem;
     position: relative;
     padding-bottom: 45px;
 } 
-h4{
+h2{
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.9);
 }

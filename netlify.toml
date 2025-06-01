@@ -6,3 +6,5 @@
   from = "/mandator"
   to = "/mandator/index.html"
   status = 200
+[plugins]
+  package = "@netlify/images"

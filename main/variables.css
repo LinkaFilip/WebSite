@@ -272,7 +272,7 @@ nav .nav-section {
     }
 
     #nav-logo-section {
-        flex-basis: calc(100% * 0.25);
+        flex-basis: calc(100% * 0.5);
     }
 
     #nav-link-section {

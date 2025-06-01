@@ -301,6 +301,7 @@ nav .nav-section {
     nav .nav-section {
         border-left: none;
         padding: 1.5rem 1rem;
+        flex-basis: calc(100% * 0.3);
     }
 
     #nav-logo-section>a>i {

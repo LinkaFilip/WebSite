@@ -5,6 +5,3 @@
   from = "/mandator"
   to = "/mandator/index.html"
   status = 200
-
-[[plugins]]
-  @netlify/plugin-image-optim

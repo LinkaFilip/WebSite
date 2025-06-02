@@ -34,11 +34,15 @@ h1{
 @media(max-width: 800px) {
     .container{
         flex-direction: column;
+        margin-top: 0px;
     }
     .text{
         width: 100%;
     }
     .images{
         width: 100%;
+    }
+    .images>img{
+        margin-left: 0px;
     }
 }

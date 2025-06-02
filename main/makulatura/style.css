@@ -1,0 +1,14 @@
+main {
+    flex-grow: 1;
+    position: relative;
+    color: white;
+    font-family: "Mandator";
+}
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    width: calc(100% *(2 / 3));
+}

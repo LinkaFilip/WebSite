@@ -180,7 +180,7 @@ body {
     overflow-x: hidden;
 }
 nav {
-    position: fixed;
+    position: relative;
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-color);

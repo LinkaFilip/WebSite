@@ -5,6 +5,10 @@ main {
     font-family: "Mandator";
     display: flex;
     justify-content: center;
+    padding: 50px;
+}
+h1{
+    font-weight: 400;
 }
 .container{
     width: 90%;
@@ -15,10 +19,14 @@ main {
 .text{
     width: calc(100% *(3 / 5));
 }
+.text>p{
+    margin-right: 20px;
+}
 .images{
     width: calc(100% *(2 / 5));
 }
 .images>img{
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 20px;
 }

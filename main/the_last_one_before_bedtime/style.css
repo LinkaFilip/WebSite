@@ -1,0 +1,24 @@
+main {
+    flex-grow: 1;
+    position: relative;
+    color: white;
+    font-family: "Mandator";
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.text{
+    width: calc(100% *(3 / 5));
+}
+.images{
+    width: calc(100% *(2 / 5));
+}
+.images>img{
+    width: 100%;
+    margin-bottom: 20px;
+}

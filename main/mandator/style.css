@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 #first, #second{
-    height: 100vh;
+    height: auto;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;

@@ -26,6 +26,7 @@ h1{
 .images{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
     width: 100%;
 }
 .images>img{

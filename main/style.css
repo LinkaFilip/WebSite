@@ -217,7 +217,6 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     main>article>.article-image-section {
         order: 1;
         height: 100%;
-        padding-top: 70px;
     }
 
     main>article>.article-title-section {

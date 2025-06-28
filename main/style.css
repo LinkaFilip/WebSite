@@ -204,10 +204,8 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
         height: max(700px, 100%);
     }
     main>article.dreams{
-			#main>article{
-				grid-template-columns: 1fr;
-				grid-template-rows: 3fr;
-			}
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr;
     }
     main>article>.article-title-section {
         padding: 2rem;

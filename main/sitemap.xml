@@ -12,4 +12,20 @@
     <loc>https://filipl.art/work/</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://filipl.art/white_puppies/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://filipl.art/makulatura/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://filipl.art/the_last_one_before_bedtime/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://filipl.art/wrongly_developed_dreams/</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>

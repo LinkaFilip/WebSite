@@ -229,7 +229,9 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     main>article>.article-description-section>p {
         font-size: 1rem;
     }
-    main>article>.article-image-section>img{
+    main>article>.article-image-section>img{        
+        padding-top: 0px;
+        object-fit: cover;
         aspect-ratio: 3 / 1.5;
     }
 }

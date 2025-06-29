@@ -11,6 +11,7 @@
   
     gtag('config', 'G-6HDQEQGMNF');
   </script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <link rel="stylesheet" href="../variables.css"> 
   <link rel="stylesheet" href="style.css" />
   <title>Filip Linka | Work</title>
@@ -45,18 +46,14 @@
 
   <script src="projects.js"></script>
   <script>
-    const grid = document.getElementById("project-grid");
+    const grid = document.querySelector('.grid');
 
-    projects.forEach(p => {
-      const wrapper = document.createElement("div");
-      wrapper.className = "project";
-      wrapper.innerHTML = `
-        <a href="${p.link}">
-          <img src="${p.image}" alt="${p.title}">
-        </a>
-        <span><a href="${p.link}">${p.title}</a></span>
-      `;
-      grid.appendChild(wrapper);
+    // Inicializace Masonry po načtení obsahu
+    new Masonry(grid, {
+      itemSelector: '.project',
+      columnWidth: '.project',
+      gutter: 30,
+      percentPosition: true
     });
   </script>
 </body>

@@ -3,40 +3,29 @@
   padding-inline: 2rem;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 stejně široké sloupce */
-  gap: 50px; /* mezera mezi obrázky */
-  padding-bottom: 50px;
-}
-project{
-    position: relative;
-    display: block;
-    width: 422px;
-    padding-bottom: 60px;
-}
-.grid img {
-  width: 100%;
-  height: auto;        /* zachová poměr stran */
-  display: block;      /* odstraní bílé mezery pod obrázky */
-  object-fit: cover;   /* přizpůsobí se rámečku, můžeš vypnout */
-  padding-bottom: 30px;
+  margin: 40px auto;
 }
 
-@media(max-width: 800px) {
-    .grid{
-        grid-template-columns: repeat(2, 1fr); /* 3 stejně široké sloupce */
-        gap: 0;
-    }
-    project{
-      width: 100%;
-    }
+.project {
+  width: 30%;
+  margin-bottom: 30px;
+  float: left;
 }
-@media(max-width: 450px){
-    .grid{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0;
-    }
-    project{
-      width: 100%;
-    }
+@media (max-width: 1000px) {
+  .project {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+  }
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
 }

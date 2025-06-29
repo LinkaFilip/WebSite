@@ -11,7 +11,6 @@
   
     gtag('config', 'G-6HDQEQGMNF');
   </script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <link rel="stylesheet" href="../variables.css"> 
   <link rel="stylesheet" href="style.css" />
   <title>Filip Linka | Work</title>
@@ -21,6 +20,8 @@
 <link rel="preload" as="image" href="/images/makulaturaquality=2.webp">
 <link rel="preload" as="image" href="/images/white_puppiesquality=2.webp">
 <link rel="preload" as="image" href="/images/the_last_one_before_bedtimequality=2.webp">
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
   <header>
@@ -46,14 +47,29 @@
 
   <script src="projects.js"></script>
   <script>
-    const grid = document.querySelector('.grid');
+    const grid = document.getElementById("project-grid");
 
-    // Inicializace Masonry po načtení obsahu
-    new Masonry(grid, {
-      itemSelector: '.project',
-      columnWidth: '.project',
-      gutter: 30,
-      percentPosition: true
+    // Vykreslení projektů
+    projects.forEach(p => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "project";
+      wrapper.innerHTML = `
+        <a href="${p.link}">
+          <img src="${p.image}" alt="${p.title}">
+        </a>
+        <span><a href="${p.link}">${p.title}</a></span>
+      `;
+      grid.appendChild(wrapper);
+    });
+
+    // Inicializace Masonry po načtení obrázků
+    imagesLoaded(grid, function () {
+      new Masonry(grid, {
+        itemSelector: '.project',
+        columnWidth: '.project',
+        gutter: 30,
+        percentPosition: true
+      });
     });
   </script>
 </body>

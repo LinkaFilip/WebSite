@@ -63,8 +63,8 @@ main>article>.article-title-section, main>article>.article-nav-section {
 main>article>.article-image-section>img{
     object-fit: contain;
     width: 100%;
-    object-position: top;
-    background-color: #ffffff00;
+    object-position: center;
+    background-color: #ffffff;
     aspect-ratio: 3 / 1;
 }
 main>article>.article-image-section {

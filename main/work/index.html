@@ -49,16 +49,21 @@
   <script>
     const grid = document.getElementById("project-grid");
 
-    // Vykreslení projektů
     projects.forEach(p => {
       const wrapper = document.createElement("div");
       wrapper.className = "project";
-      wrapper.innerHTML = `
-        <a href="${p.link}">
-          <img src="${p.image}" alt="${p.title}">
-        </a>
-        <span><a href="${p.link}">${p.title}</a></span>
-      `;
+
+      // Obrázek s odkazem, nebo bez
+      const imageHTML = p.link
+        ? `<a href="${p.link}"><img src="${p.image}" alt="${p.title}"></a>`
+        : `<img src="${p.image}" alt="${p.title}">`;
+
+      // Titulek s odkazem, nebo bez
+      const titleHTML = p.link
+        ? `<span><a href="${p.link}">${p.title}</a></span>`
+        : `<span>${p.title}</span>`;
+
+      wrapper.innerHTML = `${imageHTML}${titleHTML}`;
       grid.appendChild(wrapper);
     });
 

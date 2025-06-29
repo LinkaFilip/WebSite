@@ -42,7 +42,9 @@ h1{
         width: 100%;
     }
     .images{
+        grid-template-columns: 1fr;
         width: 100%;
+
     }
     .images>img{
         margin-left: 0px;

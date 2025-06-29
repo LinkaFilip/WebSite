@@ -1,18 +1,8 @@
 const projects = [
   {
-    title: "Random",
-    image: "/images/wrongly_developed_dreams.webp",
-    link: "/wrongly_developed_dreams/"
-  },
-  {
     title: "Wrongly developed dreams",
     image: "/images/wrongly_developed_dreams.webp",
     link: "/wrongly_developed_dreams/"
-  },
-  {
-    title: "White puppies",
-    image: "/images/white_puppiesquality=2.webp",
-    link: "/white_puppies/"
   },
   {
     title: "The last one before bedtime",
@@ -23,5 +13,10 @@ const projects = [
     title: "Makulatura",
     image: "/images/makulaturaquality=2.webp",
     link: "/makulatura/"
+  },
+  {
+    title: "White puppies",
+    image: "/images/white_puppiesquality=2.webp",
+    link: "/white_puppies/"
   }
 ];

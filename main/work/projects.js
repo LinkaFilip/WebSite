@@ -1,21 +1,21 @@
 const projects = [
   {
-    title: "Wrongly developed dreams",
+    title: "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",
     image: "/images/wrongly_developed_dreams.webp",
     link: "/wrongly_developed_dreams/"
   },
   {
     title: "Ponor",
-    image: "/images/ponor_showcase.webp",
+    image: "/images/Ponor-small.webp",
   },
   {
     title: "Mandator",
-    image: "/images/mandator_showcase.webp",
+    image: "/images/Mandator-small.webp",
     link: "/mandator/"
   },
   {
     title: "Arlington",
-    image: "/images/arlington_showcase.webp",
+    image: "/images/Arlington-small.webp",
   },
   {
     title: "The last one before bedtime",

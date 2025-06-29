@@ -39,31 +39,25 @@
   </header>
 
   <main id="main">
-    <div class="grid">
-      <div class="row">
-        <project>
-          <a href="/wrongly_developed_dreams/"><img src="/images/wrongly_developed_dreams.webp" alt="Wrongly developed dreams" loading="eager"></a>
-          <span><a href="/white/puppies/">Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death</a></span>
-        </project>
-        <project>
-          <a href="/white_puppies/"><img src="/images/white_puppiesquality=2.webp" alt="White puppies" loading="lazy"></a>
-          <span><a href="/white/puppies/">White puppies</a></span>
-        </project>
-      </div>
-      <div class="row">
-        <project>
-          <a href="/the_last_one_before_bedtime/"><img src="/images/the_last_one_before_bedtime.webp" alt="The last one before bedtime" loading="eager"></a>
-          <span><a href="/the_last_one_before_bedtime/">The last one before bedtime</a></span>
-
-        </project>
-      </div>
-      <div class="row">
-        <project>
-          <a href="/makulatura/"><img src="/images/makulaturaquality=2.webp" alt="Makulatura" loading="eager" fetchpriority="high"></a>
-          <span><a href="/makulatura/">Makulatura</a></span>
-        </project>
-      </div>
-    </div>   
+    <div class="grid" id="project-grid"></div>
   </main>
+
+
+  <script src="projects.js"></script>
+  <script>
+    const grid = document.getElementById("project-grid");
+
+    projects.forEach(p => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "project";
+      wrapper.innerHTML = `
+        <a href="${p.link}">
+          <img src="${p.image}" alt="${p.title}">
+        </a>
+        <span><a href="${p.link}">${p.title}</a></span>
+      `;
+      grid.appendChild(wrapper);
+    });
+  </script>
 </body>
 </html>

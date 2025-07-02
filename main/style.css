@@ -135,6 +135,7 @@ main>article>.article-nav-section>.article-nav-button {
     font-size: 3rem;
     cursor: pointer;
     border: 1px solid var(--border-color);
+    height: 160px;
 }
 
 main>article>.article-nav-section>.article-nav-button:hover {

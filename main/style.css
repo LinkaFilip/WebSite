@@ -57,7 +57,7 @@ main>article>.article-description-section, main>article>.article-nav-section {
 }
 
 main>article>.article-title-section, main>article>.article-nav-section {
-    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
 }
 
 main>article>.article-image-section>img{
@@ -134,7 +134,7 @@ main>article>.article-nav-section>.article-nav-button {
     color: rgba(255, 255, 255, 0.75);
     font-size: 3rem;
     cursor: pointer;
-    border: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
     height: 160px;
 }
 

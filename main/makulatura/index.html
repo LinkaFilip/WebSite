@@ -89,8 +89,12 @@
 		document.querySelectorAll('.container img').forEach(img => {
 		img.addEventListener('load', () => {
 			img.style.display = 'block';
+			if(img.complete){
+				document.querySelector(".placeholder").style = "block: none";
+			}
 		});
-		});
+		}
+	);
 	</script>
 </body>
 </html>

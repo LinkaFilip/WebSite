@@ -75,7 +75,7 @@
 				<p>Photo by <a href="https://www.instagram.com/kaktustu/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Jáchym Tuček</a></p>
 			</div>
 			<div class="placeholder" style="background-color: #ccc; width: 100%; height: 398.4px; margin-bottom: 20px; animation: pulse 1.5s infinite; display: block;"></div>
-			<img src="/images/makulatura_sleeve.webp" alt="Makulatura" loading="eager" style="margin-bottom: 20px; display: none;">
+			<img class="skeleton-image" src="/images/makulatura_sleeve.webp" alt="Makulatura" loading="eager" style="margin-bottom: 20px; display: none;">
 			
 			<div class="images">
 				<img src="/images/makulatura2.webp" alt="Makulatura" loading="lazy" style="display: block;">
@@ -86,7 +86,7 @@
 		</div>
 	</main>
 	<script>
-		document.querySelectorAll('.container img').forEach(img => {
+		document.querySelectorAll('.skeleton-image').forEach(img => {
 		img.addEventListener('load', () => {
 			img.style.display = 'block';
 			if(img.complete){

@@ -88,7 +88,7 @@
 	<script>
 		document.querySelectorAll('.container img').forEach(img => {
   img.addEventListener('load', () => {
-    const placeholder = img.previousElementSibling; // placeholder je před img
+    const placeholder = document.querySelector(".placeholder");
     if (placeholder) {
       placeholder.style.display = 'none';
     }

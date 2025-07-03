@@ -87,14 +87,10 @@
 	</main>
 	<script>
 		document.querySelectorAll('.container img').forEach(img => {
-  img.addEventListener('load', () => {
-    const placeholder = document.querySelector(".placeholder");
-    if (placeholder) {
-      placeholder.style.display = 'none';
-    }
-    img.style.display = 'block';
-  });
-});
+		img.addEventListener('load', () => {
+			img.style.display = 'block';
+		});
+		});
 	</script>
 </body>
 </html>

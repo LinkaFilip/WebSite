@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
   <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF"></script>
+  <script>
+	window.addEventListener("scroll", () => {
+		const script = document.createElement("script");
+		script.src = "https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF";
+		script.async = true;
+		document.head.appendChild(script);
+
+		script.onload = () => {
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag("js", new Date());
+		gtag("config", "G-6HDQEQGMNF");
+		};
+	}, { once: true });
+	</script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }

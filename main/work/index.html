@@ -105,35 +105,74 @@
 
   <script src="projects.js"></script>
   <script>
-    const grid = document.getElementById("project-grid");
+  const grid = document.getElementById("project-grid");
 
-    projects.forEach(p => {
-      const wrapper = document.createElement("div");
-      wrapper.className = "project";
+  projects.forEach(p => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "project";
 
-      // Obrázek s odkazem, nebo bez
-      const imageHTML = p.link
-        ? `<a href="${p.link}"><img src="${p.image}" alt="${p.title}"></a>`
-        : `<img src="${p.image}" alt="${p.title}">`;
+    const container = document.createElement("div");
+    container.className = "image-wrapper";
+    container.style.position = "relative";
 
-      // Titulek s odkazem, nebo bez
-      const titleHTML = p.link
-        ? `<span><a href="${p.link}">${p.title}</a></span>`
-        : `<span>${p.title}</span>`;
+    const imgLow = document.createElement("img");
+    imgLow.src = p.imageLow;
+    imgLow.alt = p.title;
+    imgLow.className = "low-res";
+    imgLow.style.cssText = `
+      width: 100%;
+      display: block;
+      filter: blur(10px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+    `;
 
-      wrapper.innerHTML = `${imageHTML}${titleHTML}`;
-      grid.appendChild(wrapper);
+    const imgHigh = document.createElement("img");
+    imgHigh.src = p.imageHigh;
+    imgHigh.alt = p.title;
+    imgHigh.loading = "lazy";
+    imgHigh.style.cssText = `
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+    `;
+
+    imgHigh.onload = () => {
+      imgLow.style.opacity = "0";
+      setTimeout(() => {
+        imgLow.remove();
+      }, 300);
+    };
+
+    container.appendChild(imgHigh);
+    container.appendChild(imgLow);
+
+    // Odkaz (volitelný)
+    const imageHTML = p.link
+      ? `<a href="${p.link}">${container.outerHTML}</a>`
+      : container.outerHTML;
+
+    // Titulek
+    const titleHTML = p.link
+      ? `<span><a href="${p.link}">${p.title}</a></span>`
+      : `<span>${p.title}</span>`;
+
+    wrapper.innerHTML = `${imageHTML}${titleHTML}`;
+    grid.appendChild(wrapper);
+  });
+
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.project',
+      columnWidth: '.project',
+      gutter: 30,
+      percentPosition: true
     });
-
-    // Inicializace Masonry po načtení obrázků
-    imagesLoaded(grid, function () {
-      new Masonry(grid, {
-        itemSelector: '.project',
-        columnWidth: '.project',
-        gutter: 30,
-        percentPosition: true
-      });
-    });
+  });
   </script>
 </body>
 </html>

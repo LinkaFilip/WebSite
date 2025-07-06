@@ -140,9 +140,12 @@
     `;
 
     imgHigh.onload = () => {
+      imgLow.style.transition = "opacity 0.3s ease";
       imgLow.style.opacity = "0";
+
+      // Počkej, až skončí přechod, a pak obrázek skryj zcela
       setTimeout(() => {
-        imgLow.remove();
+        imgLow.style.display = "none";
       }, 300);
     };
 

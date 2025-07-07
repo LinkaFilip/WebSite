@@ -25,24 +25,56 @@
   </script>
 
   <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Filip Linka",
-    "url": "https://filipl.art/",
-    "sameAs": [
-	  "https://www.instagram.com/linka.filip/",
-      "https://dribbble.com/linkafilip",
-      "https://www.behance.net/filiplinka",
-      "https://github.com/LinkaFilip",
-	  "https://www.linkedin.com/in/filip-linka-b46853286/"
-    ],
-    "jobTitle": "Printing services",
-    "description": "Filip Linka's portfolio - printer, graphic designer and typography",	
-	"image": "https://filipl.art/images/profile_photo.jpg"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://filipl.art/#website",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka — Portfolio",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://filipl.art/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://filipl.art/#webpage",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka — Printer, Designer & Typographer",
+      "description": "Filip Linka's portfolio — printing services, graphic design and typography.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://filipl.art/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://filipl.art/images/profile_photo.jpg"
+      },
+      "dateModified": "2025-07-07"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://filipl.art/#person",
+      "name": "Filip Linka",
+      "url": "https://filipl.art/",
+      "image": "https://filipl.art/images/profile_photo.jpg",
+      "jobTitle": "Printer, Graphic Designer, Typographer",
+      "description": "Filip Linka's portfolio - printer, graphic designer and typography",
+      "sameAs": [
+        "https://www.instagram.com/linka.filip/",
+        "https://dribbble.com/linkafilip",
+        "https://www.behance.net/filiplinka",
+        "https://github.com/LinkaFilip",
+        "https://www.linkedin.com/in/filip-linka-b46853286/"
+      ]
+    }
+  ]
+}
+</script>
+
 
   <!-- Meta Tags -->
   <meta charset="UTF-8" />

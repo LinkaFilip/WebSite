@@ -9,3 +9,21 @@
   for = "/robots.txt"
   [headers.values]
   Content-Type = "text/plain"
+  
+[[redirects]]
+  from = "http://www.filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true

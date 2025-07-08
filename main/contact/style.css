@@ -30,6 +30,6 @@ span{
 }
 @media(max-width: 800px) {
     container{
-        margin-left: 60px;
+        margin-left: cals(100% * (1 / 6));
     }
 }

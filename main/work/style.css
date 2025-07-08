@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 #main {
   padding-top: 50px;
   padding-inline: 2rem;
@@ -23,8 +26,8 @@
 
 .project img {
   width: 100%;
-  display: block;
   height: auto;
-  object-fit: cover;
+  display: block;
   margin-bottom: 10px;
+  object-fit: unset;
 }

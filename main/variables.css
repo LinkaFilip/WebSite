@@ -124,7 +124,7 @@ nav .nav-section {
     }
 
     #nav-link-section {
-        flex-basis: calc(100% / 3);
+        flex-basis: 100%;
         gap: 3rem;
     }
 }

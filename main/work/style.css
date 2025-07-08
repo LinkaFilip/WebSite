@@ -12,6 +12,8 @@
 .project {
   width: 30%;
   margin-bottom: 30px;
+  border: none;
+  outline: none;
 }
 @media (max-width: 1000px) {
   .project {

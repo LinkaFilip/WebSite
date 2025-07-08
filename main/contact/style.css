@@ -4,9 +4,9 @@
 
 .container{
     display: flex;
-    margin-left: 100px;
+    margin-left: calc(100% * (1/6));;
     width: 80%;
-    flex-direction: calc(100% * (1/6));
+    flex-direction: column
 }
 span{
     font-size: 1.5rem;

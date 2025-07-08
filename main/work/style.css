@@ -9,7 +9,6 @@
 .project {
   width: 30%;
   margin-bottom: 30px;
-  float: left;
 }
 @media (max-width: 1000px) {
   .project {

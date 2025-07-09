@@ -20,11 +20,12 @@ const projects = [
     title: "The sun in the brightest night",
     imageLow: "/images/the_sun_in_the_brightest_night.webp",
     imageHigh: "/images/the_sun_in_the_brightest_night.webp",
+    link: "/the_sun_in_the_brightest_night/"
   },
   {
     title: "Arlington",
     imageLow: "/images/Arlington-small.webp",
-    imageHigh: "/images/Arlington-small.webp",
+    imageHigh: "/images/Arlington-small.webp"
   },
   {
     title: "The last one before bedtime",

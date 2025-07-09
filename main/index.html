@@ -37,32 +37,56 @@
       "inLanguage": "en",
       "publisher": {
         "@id": "https://filipl.art/#person"
-      }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://filipl.art/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://www.instagram.com/linka.filip/",
+        "https://dribbble.com/linkafilip",
+        "https://www.behance.net/filiplinka",
+        "https://github.com/LinkaFilip",
+        "https://www.linkedin.com/in/filip-linka-b46853286/"
+      ]
     },
     {
       "@type": "WebPage",
       "@id": "https://filipl.art/#webpage",
       "url": "https://filipl.art/",
-      "name": "Filip Linka — Printer, Designer & Typographer",
-      "description": "Filip Linka's portfolio — printing services, graphic design and typography.",
+      "name": "Filip Linka — Printer, Graphic Designer & Typographer",
+      "description": "Explore the creative portfolio of Filip Linka — focused on printing, graphic design and modern typography.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://filipl.art/#website"
       },
       "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://filipl.art/images/profile_photo.jpg"
+        "@id": "https://filipl.art/#profile-photo"
+      },
+      "mainEntity": {
+        "@id": "https://filipl.art/#person"
       },
       "dateModified": "2025-07-07"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://filipl.art/#profile-photo",
+      "url": "https://filipl.art/images/profile_photo.jpg",
+      "contentUrl": "https://filipl.art/images/profile_photo.jpg",
+      "caption": "Filip Linka — profile photo",
+      "inLanguage": "en"
     },
     {
       "@type": "Person",
       "@id": "https://filipl.art/#person",
       "name": "Filip Linka",
       "url": "https://filipl.art/",
-      "image": "https://filipl.art/images/profile_photo.jpg",
+      "image": {
+        "@id": "https://filipl.art/#profile-photo"
+      },
       "jobTitle": "Printer, Graphic Designer, Typographer",
-      "description": "Filip Linka's portfolio - printer, graphic designer and typography",
+      "description": "Portfolio of Filip Linka — printer, graphic designer and typographer.",
       "sameAs": [
         "https://www.instagram.com/linka.filip/",
         "https://dribbble.com/linkafilip",
@@ -74,7 +98,6 @@
   ]
 }
 </script>
-
 
   <!-- Meta Tags -->
   <meta charset="UTF-8" />

@@ -4,9 +4,9 @@
 
 .container{
     display: flex;
-    margin-left: 100px;
+    margin-left: calc(100% * (1/6));;
     width: 80%;
-    flex-direction: column;
+    flex-direction: column
 }
 span{
     font-size: 1.5rem;
@@ -30,6 +30,6 @@ span{
 }
 @media(max-width: 800px) {
     container{
-        margin-left: 60px;
+        margin-left: calc(100% * (1 / 6));
     }
 }

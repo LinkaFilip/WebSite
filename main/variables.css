@@ -24,6 +24,8 @@ body {
     height: 100vh;
     margin: 0px;
     overflow-x: hidden;
+}
+.body{
     overflow-y: hidden;
 }
 nav {
@@ -137,7 +139,9 @@ nav .nav-section {
     text-decoration: none;
     color: white;
 }
-    
+    .body{
+        overflow-y: visible;
+    }
     nav {
         justify-content: space-between;
     }

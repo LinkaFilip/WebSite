@@ -24,6 +24,7 @@ body {
     height: 100vh;
     margin: 0px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 nav {
     position: relative;

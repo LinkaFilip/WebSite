@@ -150,6 +150,9 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     *{
         font-family: "Mandator", sans-serif;
     }
+    body{
+        overflow-y: visible;
+    }
     main>article {
         grid-template-rows: 1fr repeat(4, 0.5fr);
         height: max(700px, 100%);

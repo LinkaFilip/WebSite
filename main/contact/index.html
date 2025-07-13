@@ -15,7 +15,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ContactPage",
+  "@type": "WebPage",
   "@id": "https://filipl.art/contact/#webpage",
   "url": "https://filipl.art/contact/",
   "name": "Filip Linka — Contact",
@@ -29,6 +29,18 @@
     "name": "Filip Linka",
     "inLanguage": "en-US"
   },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://filipl.art/?s={search_term_string}"
+    },
+    "query-input": {
+      "@type": "PropertyValueSpecification",
+      "valueRequired": true,
+      "valueName": "search_term_string"
+    }
+  },
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "@id": "https://filipl.art/contact/#breadcrumb",
@@ -38,7 +50,7 @@
         "position": 1,
         "name": "Home",
         "item": {
-          "@type": "WebPage",
+          "@type": "Thing",
           "@id": "https://filipl.art/"
         }
       },
@@ -47,18 +59,11 @@
         "position": 2,
         "name": "Contact",
         "item": {
-          "@type": "WebPage",
+          "@type": "Thing",
           "@id": "https://filipl.art/contact/"
         }
       }
     ]
-  },
-  "potentialAction": {
-    "@type": "ReadAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://filipl.art/contact/"
-    }
   },
   "mainEntity": {
     "@type": "Person",

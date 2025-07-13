@@ -40,6 +40,12 @@ const projects = [
     link: "/makulatura/"
   },
   {
+    title: "Stencil printing sampler",
+    imageHigh: "/images/stencil_printing_sampler.webp",
+    imageLow: "/images/stencil_printing_sampler.webp",
+    link: "/stencil_printing_sampler/"
+  },
+  {
     title: "White puppies",
     imageLow: "/images/white_puppiesquality=2.webp",
     imageHigh: "/images/white_puppiesquality=2.webp",

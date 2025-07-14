@@ -14,20 +14,59 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph":[
-  {
-  "@type": "CollectionPage",
-  "name": "Work — Filip Linka",
-  "url": "https://filipl.art/work/",
-  "description": "A curated selection of visual and printed works by Filip Linka.",
-  "inLanguage": "en",
-  "creator": {
-    "@type": "Person",
-    "name": "Filip Linka",
-    "url": "https://filipl.art/"
-  },
-  "hasPart": [
-      {
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://filipl.art/#website",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka",
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://filipl.art/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://filipl.art/#person",
+      "name": "Filip Linka",
+      "url": "https://filipl.art/",
+      "sameAs": ["https://www.instagram.com/linka.filip/"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://filipl.art/work/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://filipl.art/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://filipl.art/work/"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://filipl.art/work/#webpage",
+      "url": "https://filipl.art/work/",
+      "name": "Work — Filip Linka",
+      "description": "A curated selection of visual and printed works by Filip Linka.",
+      "inLanguage": "en",
+      "creator": {
+        "@id": "https://filipl.art/#person"
+      },
+      "isPartOf": {
+        "@id": "https://filipl.art/#website"
+      },
+      "hasPart": [
+        {
           "@type": "VisualArtwork",
           "name": "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",
           "image": "https://filipl.art/images/wrongly_developed_dreams.webp",
@@ -47,8 +86,8 @@
         },
         {
           "@type": "VisualArtwork",
-          "name": "The sun in the brightest night"
-          "image": "/images/the_sun_in_the_brightest_night.webp",
+          "name": "The sun in the brightest night",
+          "image": "https://filipl.art/images/the_sun_in_the_brightest_night.webp",
           "url": "https://filipl.art/the_sun_in_the_brightest_night/"
         },
         {

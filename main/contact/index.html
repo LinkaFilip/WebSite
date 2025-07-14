@@ -15,52 +15,63 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "@id": "https://filipl.art/contact/#webpage",
-  "url": "https://filipl.art/contact/",
-  "name": "Filip Linka — Contact",
-  "datePublished": "2025-05-15",
-  "dateModified": "2025-07-13",
-  "inLanguage": "en-US",
-  "isPartOf": {
-    "@type": "WebSite",
-    "@id": "https://filipl.art/#website",
-    "url": "https://filipl.art/",
-    "name": "Filip Linka",
-    "inLanguage": "en-US"
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "@id": "https://filipl.art/contact/#breadcrumb",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": {
-          "@type": "WebPage",
-          "@id": "https://filipl.art/"
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://filipl.art/contact/#webpage",
+      "url": "https://filipl.art/contact/",
+      "name": "Filip Linka — Contact",
+      "datePublished": "2025-05-15",
+      "dateModified": "2025-07-13",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://filipl.art/#website",
+        "url": "https://filipl.art/",
+        "name": "Filip Linka",
+        "inLanguage": "en-US"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://filipl.art/contact/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": {
+              "@type": "WebPage",
+              "@id": "https://filipl.art/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": {
+              "@type": "WebPage",
+              "@id": "https://filipl.art/contact/"
+            }
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://filipl.art/contact/"
         }
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Contact",
-        "item": {
-          "@type": "WebPage",
-          "@id": "https://filipl.art/contact/"
-        }
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Filip Linka",
+        "email": "mailto:filip.linka@email.cz",
+        "sameAs": [
+          "https://www.instagram.com/linka.filip/"
+        ]
       }
-    ]
-  },
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Filip Linka",
-    "email": "mailto:filip.linka@email.cz",
-    "sameAs": [
-      "https://www.instagram.com/linka.filip/"
-    ]
-  }
+    }
+  ]
 }
 </script>
   <link rel="stylesheet" href="../variables.css"> 

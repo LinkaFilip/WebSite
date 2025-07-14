@@ -17,43 +17,25 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://filipl.art/#website",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka",
+      "inLanguage": "en-US"
+    },
+    {
       "@type": "ContactPage",
       "@id": "https://filipl.art/contact/#webpage",
       "url": "https://filipl.art/contact/",
       "name": "Filip Linka — Contact",
       "datePublished": "2025-05-15",
-      "dateModified": "2025-07-13",
+      "dateModified": "2025-07-07",
       "inLanguage": "en-US",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://filipl.art/#website",
-        "url": "https://filipl.art/",
-        "name": "Filip Linka",
-        "inLanguage": "en-US"
+        "@id": "https://filipl.art/#website"
       },
       "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "@id": "https://filipl.art/contact/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": {
-              "@type": "WebPage",
-              "@id": "https://filipl.art/"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Contact",
-            "item": {
-              "@type": "WebPage",
-              "@id": "https://filipl.art/contact/"
-            }
-          }
-        ]
+        "@id": "https://filipl.art/contact/#breadcrumb"
       },
       "potentialAction": {
         "@type": "ReadAction",
@@ -63,13 +45,35 @@
         }
       },
       "mainEntity": {
-        "@type": "Person",
-        "name": "Filip Linka",
-        "email": "mailto:filip.linka@email.cz",
-        "sameAs": [
-          "https://www.instagram.com/linka.filip/"
-        ]
+        "@id": "https://filipl.art/#filip"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://filipl.art/#filip",
+      "name": "Filip Linka",
+      "email": "mailto:filip.linka@email.cz",
+      "sameAs": [
+        "https://www.instagram.com/linka.filip/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://filipl.art/contact/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://filipl.art/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://filipl.art/contact/"
+        }
+      ]
     }
   ]
 }

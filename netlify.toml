@@ -1,16 +1,6 @@
 [build]
   publish = "main"
 
-[[redirects]]
-  from = "/mandator"
-  to = "/mandator/index.html"
-  status = 200
-  
-[[redirects]]
-  from = "/contact"
-  to = "/contact/index.html"
-  status = 200
-
 [[headers]]
   for = "/robots.txt"
   [headers.values]

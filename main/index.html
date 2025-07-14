@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
   <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF"></script>
+<script>
+  requestIdleCallback(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-6HDQEQGMNF");
+    };
+  });
+</script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -11,58 +25,125 @@
   </script>
 
   <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Filip Linka",
-    "url": "https://filipl.art",
-    "sameAs": [
-      "https://dribbble.com/linkafilip",
-      "https://www.behance.net/filiplinka",
-      "https://github.com/LinkaFilip"
-    ],
-    "jobTitle": "Printing services",
-    "description": "Filip Linka's portfolio - printer, graphic designer and typography"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://filipl.art/#website",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka — Portfolio",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://filipl.art/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://filipl.art/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://www.instagram.com/linka.filip/",
+        "https://dribbble.com/linkafilip",
+        "https://www.behance.net/filiplinka",
+        "https://github.com/LinkaFilip",
+        "https://www.linkedin.com/in/filip-linka-b46853286/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://filipl.art/#webpage",
+      "url": "https://filipl.art/",
+      "name": "Filip Linka — Printer, Graphic Designer & Typographer",
+      "description": "Explore the creative portfolio of Filip Linka — focused on printing, graphic design and modern typography.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://filipl.art/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://filipl.art/#profile-photo"
+      },
+      "mainEntity": {
+        "@id": "https://filipl.art/#person"
+      },
+      "dateModified": "2025-07-07"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://filipl.art/#profile-photo",
+      "url": "https://filipl.art/images/profile_photo.jpg",
+      "contentUrl": "https://filipl.art/images/profile_photo.jpg",
+      "caption": "Filip Linka — profile photo",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://filipl.art/#person",
+      "name": "Filip Linka",
+      "url": "https://filipl.art/",
+      "image": {
+        "@id": "https://filipl.art/#profile-photo"
+      },
+      "jobTitle": "Printer, Graphic Designer, Typographer",
+      "description": "Portfolio of Filip Linka — printer, graphic designer and typographer.",
+      "sameAs": [
+        "https://www.instagram.com/linka.filip/",
+        "https://dribbble.com/linkafilip",
+        "https://www.behance.net/filiplinka",
+        "https://github.com/LinkaFilip",
+        "https://www.linkedin.com/in/filip-linka-b46853286/"
+      ]
+    }
+  ]
+}
+</script>
 
-  <!-- Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="Filip Linka | prints and typography" />
-  <meta name="description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography" />
-  <link rel="canonical" href="https://filipl.art/" />
+<!-- Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Filip Linka — prints and typography</title>
+<meta name="description" content="Official portfolio of Filip Linka, graphic designer focusing on printing and typography" />
+<meta name="author" content="Filip Linka" />
+<link rel="canonical" href="https://filipl.art/" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://filipl.art/" />
-  <meta property="og:title" content="Filip Linka | prints and typography" />
-  <meta property="og:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography" />
-  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://filipl.art/" />
+<meta property="og:title" content="Filip Linka — prints and typography" />
+<meta property="og:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography" />
+<meta property="og:image" content="https://filipl.art/images/profile_photo.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://filipl.art/" />
-  <meta name="twitter:title" content="Filip Linka | prints and typography" />
-  <meta name="twitter:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography" />
-  <meta name="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://filipl.art/" />
+<meta name="twitter:title" content="Filip Linka — prints and typography" />
+<meta name="twitter:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography" />
+<meta name="twitter:image" content="https://filipl.art/images/profile_photo.jpg" />
 
   <!-- Title & Favicon -->
-  <title>Filip Linka | prints and typography</title>
-  <link rel="icon" href="/images/logotyp.svg" type="image/svg+xml" />
+  <title>Filip Linka — prints and typography</title>
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="filipl.art" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  
+  <link rel="preconnect" href="https://filipl.art/images/wrongly_developed_dreams04.webp">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/variables.css" />
   <link rel="stylesheet" href="/style.css" />
   <noscript><link rel="preload" href="/style.css"></noscript>
+  <meta name="robots" content="index, follow">
 </head>
-<body>
+<body class="body" style="overflow-x: hidden; ">
   <header>
     <nav data-toggled="false" data-transitionable="false">
 		<div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
 			<a href="/">
-				Filip Linka
+				<h1 style="font-size: 1rem;">Filip Linka</h1>
 			</a>
 		</div>
 		<div id="nav-mobile-section">
@@ -88,7 +169,7 @@
 	">Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death</h2>
 			</div>
 			<div id="random" class="article-image-section article-section" style="grid-row: span 2;">
-				<img src="/images/wrongly_developed_dreams04.webp" loading="lazy" alt="Wrongly developed dreams" style="object-fit: cover;">
+				<img src="/images/wrongly_developed_dreams04.webp" loading="eager" alt="Wrongly developed dreams" style="object-fit: cover;">
 			</div>
 			<div class="article-nav-section article-section">
 				<button class="article-nav-button" type="button" onclick="handleLeftClick()">
@@ -126,7 +207,7 @@
 		<article data-index="2" data-status="inactive">
 			
 			<div class="article-description-section article-section">
-				<p><span class="bold">Ponor</span> is a serif book font. It is originating from the 16ᵗʰ century typefacecalled Garamond (especially from the metal type)... It does contain czech, french or some of polish accents, numbers, superior letters, ligatures, special symbols, etc...</p>
+				<p><span class="bold">Ponor</span> is a serif book font. It is originating from the 16ᵗʰ century typeface called Garamond (especially from the metal type)... It does contain czech, french or some of polish accents, numbers, superior letters, ligatures, special symbols, etc...</p>
 			</div>
 			<div id="random" class="article-image-section article-section">
 				<img src="/images/ponor_showcase.webp" loading="lazy" alt="Ponor">

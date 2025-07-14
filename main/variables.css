@@ -25,6 +25,9 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+.body{
+    overflow-y: hidden;
+}
 nav {
     position: relative;
     display: flex;
@@ -124,7 +127,7 @@ nav .nav-section {
     }
 
     #nav-link-section {
-        flex-basis: calc(100% / 3);
+        flex-basis: 100%;
         gap: 3rem;
     }
 }
@@ -136,7 +139,9 @@ nav .nav-section {
     text-decoration: none;
     color: white;
 }
-    
+    .body{
+        overflow-y: visible;
+    }
     nav {
         justify-content: space-between;
     }

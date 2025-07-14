@@ -11,32 +11,90 @@
   
     gtag('config', 'G-6HDQEQGMNF');
   </script>
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Work - Filip Linka",
-  "url": "https://filipl.art/work/"
+  "name": "Work — Filip Linka",
+  "url": "https://filipl.art/work/",
+  "description": "A curated selection of visual and printed works by Filip Linka.",
+  "inLanguage": "en",
+  "creator": {
+    "@type": "Person",
+    "name": "Filip Linka",
+    "url": "https://filipl.art/"
+  },
+  "hasPart": [
+    {
+      "@type": "VisualArtwork",
+      "name": "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",
+      "image": "https://filipl.art/images/wrongly_developed_dreams.webp",
+      "url": "https://filipl.art/wrongly_developed_dreams/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "Ponor",
+      "image": "https://filipl.art/images/ponor.webp",
+      "url": "https://filipl.art/ponor/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "Mandator",
+      "image": "https://filipl.art/images/mandator.webp",
+      "url": "https://filipl.art/mandator/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "Arlington",
+      "image": "https://filipl.art/images/arlington.webp",
+      "url": "https://filipl.art/arlington/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "The last one before bedtime",
+      "image": "https://filipl.art/images/the_last_one_before_bedtime.webp",
+      "url": "https://filipl.art/the_last_one_before_bedtime/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "Makulatura",
+      "image": "https://filipl.art/images/makulatura.webp",
+      "url": "https://filipl.art/makulatura/"
+    },
+    {
+      "@type": "VisualArtwork",
+      "name": "White puppies",
+      "image": "https://filipl.art/images/white_puppies3.webp",
+      "url": "https://filipl.art/white_puppies/"
+    }
+  ]
 }
 </script>
+
   <link rel="stylesheet" href="../variables.css"> 
   <link rel="stylesheet" href="style.css" />
-  <title>Filip Linka | Work</title>
-<link rel="shortcut icon" href="/images/logotyp.svg" type="image/x-icon">
-  <link rel="canonical" href="https://filipl.art/work" />
+  <title>Filip Linka — Work</title>
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="filipl.art" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  <link rel="canonical" href="https://filipl.art/work/" />
 <meta name="description" content="Work of Filip Linka">
 <link rel="preload" as="image" href="/images/makulaturaquality=2.webp">
 <link rel="preload" as="image" href="/images/white_puppiesquality=2.webp">
 <link rel="preload" as="image" href="/images/the_last_one_before_bedtimequality=2.webp">
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <meta name="robots" content="index, follow">
 </head>
 <body>
   <header>
     <nav data-toggled="false" data-transitionable="false">
 		<div id="nav-logo-section" class="nav-section">
 			<a href="/">
-				Filip Linka
+				<h1 style="font-size: 1rem;">Filip Linka</h1>
 			</a>
 		</div>
 		<div id="nav-mobile-section">
@@ -55,35 +113,74 @@
 
   <script src="projects.js"></script>
   <script>
-    const grid = document.getElementById("project-grid");
+  const grid = document.getElementById("project-grid");
 
-    projects.forEach(p => {
-      const wrapper = document.createElement("div");
-      wrapper.className = "project";
+  projects.forEach(p => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "project";
 
-      // Obrázek s odkazem, nebo bez
-      const imageHTML = p.link
-        ? `<a href="${p.link}"><img src="${p.image}" alt="${p.title}"></a>`
-        : `<img src="${p.image}" alt="${p.title}">`;
+    const container = document.createElement("div");
+    container.className = "image-wrapper";
+    container.style.position = "relative";
 
-      // Titulek s odkazem, nebo bez
-      const titleHTML = p.link
-        ? `<span><a href="${p.link}">${p.title}</a></span>`
-        : `<span>${p.title}</span>`;
+    const imgLow = document.createElement("img");
+    imgLow.src = p.imageLow;
+    imgLow.alt = p.title;
+    imgLow.className = "low-res";
+    imgLow.style.cssText = `
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    `;
 
-      wrapper.innerHTML = `${imageHTML}${titleHTML}`;
-      grid.appendChild(wrapper);
+    const imgHigh = document.createElement("img");
+    imgHigh.src = p.imageHigh;
+    imgHigh.alt = p.title;
+    imgHigh.loading = "eager";
+    imgHigh.style.cssText = `
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+    `;
+
+    imgHigh.onload = () => {
+      imgLow.style.opacity = "0";
+
+      // Počkej, až skončí přechod, a pak obrázek skryj zcela
+      setTimeout(() => {
+        imgLow.style.display = "none";
+      }, 300);
+    };
+
+    container.appendChild(imgHigh);
+    container.appendChild(imgLow);
+
+    // Odkaz (volitelný)
+    const imageHTML = p.link
+      ? `<a href="${p.link}">${container.outerHTML}</a>`
+      : container.outerHTML;
+
+    // Titulek
+    const titleHTML = p.link
+      ? `<span><a href="${p.link}">${p.title}</a></span>`
+      : `<span>${p.title}</span>`;
+
+    wrapper.innerHTML = `${imageHTML}${titleHTML}`;
+    grid.appendChild(wrapper);
+  });
+
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.project',
+      columnWidth: '.project',
+      gutter: 30,
+      percentPosition: true
     });
-
-    // Inicializace Masonry po načtení obrázků
-    imagesLoaded(grid, function () {
-      new Masonry(grid, {
-        itemSelector: '.project',
-        columnWidth: '.project',
-        gutter: 30,
-        percentPosition: true
-      });
-    });
+  });
   </script>
 </body>
 </html>

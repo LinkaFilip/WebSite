@@ -1,3 +1,3 @@
 /*
-  Content-Security-Policy: default-src 'self';
-  script-src 'self' https://unpkg.com https://www.googletagmanager.com https://www.google-analytics.com 'sha256-dq6Fy1ehsDvZ1a71740uYzTc6sGDBZKxCvbQDoyiz7U=' 'sha256-oisIuRJ4LLk9IbidD6nhR+lT9VC3tCD5/XASmg+Yd7k='; style-src 'unsafe-inline' 'unsafe-inline'; img-src * data:; connect-src *; frame-src *;
+  Content-Security-Policy: default-src 'unsafe-inline';
+  script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.google-analytics.com 'sha256-dq6Fy1ehsDvZ1a71740uYzTc6sGDBZKxCvbQDoyiz7U=' 'sha256-oisIuRJ4LLk9IbidD6nhR+lT9VC3tCD5/XASmg+Yd7k='; style-src 'unsafe-inline' 'unsafe-inline'; img-src * data:; connect-src *; frame-src *;

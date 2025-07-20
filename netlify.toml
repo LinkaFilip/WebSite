@@ -6,15 +6,8 @@
   [headers.values]
   Content-Type = "text/plain"
 
-# Přesměrování s cestou
 [[redirects]]
   from = "http://www.filipl.art/*"
-  to = "https://filipl.art/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://filipl.art/*"
   to = "https://filipl.art/:splat"
   status = 301
   force = true
@@ -25,6 +18,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "http://filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true
+  
 # Přesměrování samotného rootu bez lomítka
 [[redirects]]
   from = "http://www.filipl.art"

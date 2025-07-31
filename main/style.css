@@ -222,6 +222,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     main>article>.article-title-section {
+        border-bottom: 1px solid var(--border-color);
         order: 2;
     }
 

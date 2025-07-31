@@ -213,6 +213,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     main>article>.article-description-section, main>article>.article-nav-section {
+        border-top: 1px solid var(--border-color);
         border-left: none;
     }
 

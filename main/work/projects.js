@@ -1,5 +1,11 @@
 const projects = [
   {
+    title: "The last one before bedtime",
+    imageHigh: "/images/the_last_one_before_bedtime.webp",
+    imageLow: "/images/the_last_one_before_bedtime.webp",
+    link: "/the_last_one_before_bedtime/"
+  },
+  {
     title: "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",
     imageLow: "/images/wrongly_developed_dreamsquality=2.webp", 
     imageHigh: "/images/wrongly_developed_dreams.webp",

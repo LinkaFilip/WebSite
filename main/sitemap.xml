@@ -1,101 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tigry.art/posters/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/japan-landscape/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/mexico-landscape/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/czechia-landscape/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/middleeast-landscape/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/uganda-landscape/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/japan-texture/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/mexico-texture/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/czechia-texture/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/middleeast-texture/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/products/uganda-texture/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/about/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/terms-and-conditions/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://tigry.art/privacy-policy/</loc>
-    <priority>0.1</priority>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  
-  <url>
     <loc>https://filipl.art/</loc>
-    <lastmod>2025-07-12</lastmod>
+    <lastmod>2025-08-25T11:37:03+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams04.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/mandator_showcase.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/ponor_showcase.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/arlington_showcase.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://filipl.art/contact/</loc>
@@ -107,7 +28,25 @@
     <loc>https://filipl.art/work/</loc>
     <lastmod>2025-07-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.8</priority>    
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams06.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams02.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams03.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams07.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://filipl.art/images/wrongly_developed_dreams05.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://filipl.art/white_puppies/</loc>

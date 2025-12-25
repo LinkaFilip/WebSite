@@ -15,7 +15,7 @@ html, body {
 }
 
 .project {
-  width: calc(100% / 3);
+  width: 30%;
   margin-bottom: 30px;
   border: none;
   outline: none;

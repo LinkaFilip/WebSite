@@ -1,7 +1,12 @@
 const projects = [
   {
+    title: "The House",
+    imageLow: "/images/theHouse-small.webp",
+    imageHigh: "/images/theHouse-small.webp"
+  },
+  {
     title: "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",
-    imageLow: "/images/wrongly_developed_dreamsquality=2.webp", 
+    imageLow: "/images/wrongly_developed_dreamsquality=2.webp",
     imageHigh: "/images/wrongly_developed_dreams.webp",
     link: "/wrongly_developed_dreams/"
   },

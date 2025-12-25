@@ -3,7 +3,7 @@ let activeIndex = 1;
 const article = document.getElementsByTagName("article");
 
 const handleLeftClick = () => {
-  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : article.length - 1;
+  const nextIndex = activeIndex - 1 >= 1 ? activeIndex - 1 : 4;
 
   const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
     nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
@@ -19,7 +19,7 @@ const handleLeftClick = () => {
 }
 
 const handleRightClick = () => {
-  const nextIndex = activeIndex + 1 <= article.length - 1 ? activeIndex + 1 : 0;
+  const nextIndex = activeIndex + 1 <= 4 ? activeIndex + 1 : 1;
 
   const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
     nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);

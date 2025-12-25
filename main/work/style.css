@@ -8,14 +8,14 @@ html, body {
 }
 #main {
   padding-top: 50px;
-  padding-left: 2rem;
+  padding-inline: 2rem;
 }
 .grid {
   margin: 40px auto;
 }
 
 .project {
-  width: 33%;
+  width: 30%;
   margin-bottom: 30px;
   border: none;
   outline: none;

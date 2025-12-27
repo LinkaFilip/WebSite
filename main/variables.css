@@ -11,6 +11,13 @@
   src: url(/mandator.woff2)
 }
 
+@font-face {
+  font-family: "HouseSans";
+  font-display: swap;
+  font-weight: 400;
+  src: url(/The_house.woff2)
+}
+
 * {
     font-family: 'Mandator', sans-serif;
     box-sizing: border-box;

@@ -94,6 +94,26 @@ img{
 
 }
 
-input{
+textarea.headline-input{
     font-family: "HouseSans";
+    font-size: 12em;
+    color: #a40e4c;
+
+    height: 400px;
+    max-width: 1200px;
+    min-width: 1000px;
+
+    outline: none;
+    border: none;
+    background: transparent;
+    resize: none;
+
+    line-height: 1.1;
+    white-space: pre-wrap;   /* klíčové */
+    overflow-wrap: break-word;
+}
+
+.headline-input::selection {
+    color: #64666c;
+    background: #323232;
 }

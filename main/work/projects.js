@@ -11,6 +11,7 @@ const projects = [
     "/images/TheHouse_Čč.webp",
     "/images/TheHouse_Dd.webp",
     "/images/TheHouse_Ee.webp",
+    "/images/TheHouse_Ěě.webp",
     "/images/TheHouse_Ff.webp",
     "/images/TheHouse_Gg.webp",
     "/images/TheHouse_Hh.webp",

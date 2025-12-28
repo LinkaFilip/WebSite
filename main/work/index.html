@@ -183,7 +183,7 @@ projects.forEach(p => {
   container.style.position = "relative";
 
   const images = p.previews || [p.imageHigh];
-  let index = Math.floor(Math.random() * images.length);
+  let index = 0; // start vždy od prvního obrázku
 
   const img = document.createElement("img");
   img.src = images[index];
@@ -192,6 +192,7 @@ projects.forEach(p => {
   img.style.cssText = `
     width: 100%;
     display: block;
+    transition: opacity 0.25s ease;
   `;
 
   container.appendChild(img);
@@ -212,19 +213,20 @@ projects.forEach(p => {
   if (images.length > 1) {
     let timer;
 
-    img.addEventListener("load", () => {
-      timer = setInterval(() => {
+    function nextImage() {
+      img.style.opacity = "0";
+      setTimeout(() => {
         index = (index + 1) % images.length;
         img.src = images[index];
-      }, 1000);
-    });
+        img.style.opacity = "1";
+      }, 200);
+    }
+
+    timer = setInterval(nextImage, 1000);
 
     wrapper.addEventListener("mouseenter", () => clearInterval(timer));
     wrapper.addEventListener("mouseleave", () => {
-      timer = setInterval(() => {
-        index = (index + 1) % images.length;
-        img.src = images[index];
-      }, 1000);
+      timer = setInterval(nextImage, 1000);
     });
   }
 });

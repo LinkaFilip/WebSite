@@ -1,3 +1,9 @@
+:root{
+    --font-size: 12em;
+    --letter-spacing: 0em;
+    --line-height: 1.1;
+}
+
 #main {
     flex-grow: 1;
     position: relative;
@@ -96,7 +102,7 @@ img{
 
 textarea.headline-input{
     font-family: "HouseSans";
-    font-size: 12em;
+    font-size: var(--font-size);
     color: #a40e4c;
 
     height: 400px;
@@ -108,7 +114,9 @@ textarea.headline-input{
     background: transparent;
     resize: none;
 
-    line-height: 1.1;
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height);
+    
     white-space: pre-wrap;   /* klíčové */
     overflow-wrap: break-word;
 }

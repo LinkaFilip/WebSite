@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-6HDQEQGMNF');
-    </script>
-    <script type="application/ld+json">
+    gtag('config', 'G-6HDQEQGMNF');
+  </script>
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -101,52 +101,70 @@
 }
 </script>
 
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="filipl.art" />
-    <link rel="manifest" href="/images/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="../variables.css">
-    <noscript>
-        <link rel="stylesheet" href="style.css">
-    </noscript>
-    <title>Filip Linka — Mandator</title>
-    <link rel="canonical" href="https://filipl.art/mandator/" />
-    <meta name="description" content="Mandator — typeface">
-    <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="filipl.art" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../variables.css">
+  <noscript>
+    <link rel="stylesheet" href="style.css">
+  </noscript>
+  <title>Filip Linka — Mandator</title>
+  <link rel="canonical" href="https://filipl.art/mandator/" />
+  <meta name="description" content="Mandator — typeface">
+  <meta name="robots" content="index, follow">
 </head>
 
 <body>
 
-    <header>
-        <nav data-toggled="false" data-transitionable="false">
-            <div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
-                <a href="/">
-                    <h1 style="font-size: 1rem;">Filip Linka</h1>
-                </a>
-            </div>
-            <div id="nav-mobile-section">
-                <div id="nav-link-section" class="nav-section">
-                    <a href="/work/">work</a>
-                    <a class="specified" href="/contact/">contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main">
-        <div id="first">
-            <div class="container">
-                <div class="text-holder">
-                    <h1>
-                        The House
-                    </h1>
-                    <textarea class="headline-input"></textarea>
-                </div>
-            </div>
+  <header>
+    <nav data-toggled="false" data-transitionable="false">
+      <div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
+        <a href="/">
+          <h1 style="font-size: 1rem;">Filip Linka</h1>
+        </a>
+      </div>
+      <div id="nav-mobile-section">
+        <div id="nav-link-section" class="nav-section">
+          <a href="/work/">work</a>
+          <a class="specified" href="/contact/">contact</a>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <div id="first">
+      <div class="container">
+        <div class="text-holder">
+          <label>
+            <input type="range" min="6" max="20" step="0.1" id="fontSize">
+          </label>
+
+          <label>
+            <input type="range" min="-0.1" max="0.5" step="0.01" id="letterSpacing">
+          </label>
+          <h1>
+            The House
+          </h1>
+          <textarea spellcheck="false" class="headline-input"></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const root = document.documentElement;
+
+    fontSize.addEventListener("input", e => {
+      root.style.setProperty("--font-size", `${e.target.value}em`);
+    });
+
+    letterSpacing.addEventListener("input", e => {
+      root.style.setProperty("--letter-spacing", `${e.target.value}em`);
+    });
+  </script>
 </body>
 
 </html>

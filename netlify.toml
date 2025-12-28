@@ -2,10 +2,23 @@
   publish = "main"
 
 [[redirects]]
+  from = "http://filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.filipl.art/*"
+  to = "https://filipl.art/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/mandator"
   to = "/mandator/index.html"
   status = 200
+
 [[headers]]
-for = "/robots.txt"
-[headers.values]
-Content-Type = "text/plain"
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain"

@@ -7,6 +7,13 @@ const projects = [
     previews: [
     "/images/TheHouse_Aa.webp",
     "/images/TheHouse_Bb.webp",
+    "/images/TheHouse_Cc.webp",
+    "/images/TheHouse_Čč.webp",
+    "/images/TheHouse_Dd.webp",
+    "/images/TheHouse_Ee.webp",
+    "/images/TheHouse_Ff.webp",
+    "/images/TheHouse_Gg.webp",
+    "/images/TheHouse_Hh.webp",
     ],
   },
   {

@@ -116,7 +116,7 @@ textarea.headline-input{
 
     letter-spacing: var(--letter-spacing);
     line-height: var(--line-height);
-    
+
     white-space: pre-wrap;   /* klíčové */
     overflow-wrap: break-word;
 }

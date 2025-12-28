@@ -1,9 +1,13 @@
 const projects = [
   {
     title: "The House",
-    imageLow: "/images/theHouse-small.webp",
-    imageHigh: "/images/theHouse-small.webp",
+    imageLow: "/images/TheHouse_Aa.webp",
+    imageHigh: "/images/TheHouse_Aa.webp",
     //link: "/the_house/"
+    previews: [
+    "/images/TheHouse_Aa.webp",
+    "/images/TheHouse_Bb.webp",
+    ],
   },
   {
     title: "Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death",

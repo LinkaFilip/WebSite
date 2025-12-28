@@ -170,74 +170,75 @@
 
 
   <script src="projects.js"></script>
-  <script>
-  const grid = document.getElementById("project-grid");
+ <script>
+const grid = document.getElementById("project-grid");
+const masonryItems = [];
 
-  projects.forEach(p => {
-    const wrapper = document.createElement("div");
-    wrapper.className = "project";
+projects.forEach(p => {
+  const wrapper = document.createElement("div");
+  wrapper.className = "project";
 
-    const container = document.createElement("div");
-    container.className = "image-wrapper";
-    container.style.position = "relative";
+  const container = document.createElement("div");
+  container.className = "image-wrapper";
+  container.style.position = "relative";
 
-    const imgLow = document.createElement("img");
-    imgLow.src = p.imageLow;
-    imgLow.alt = p.title;
-    imgLow.className = "low-res";
-    imgLow.style.cssText = `
-      width: 100%;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    `;
+  const images = p.previews || [p.imageHigh];
+  let index = Math.floor(Math.random() * images.length);
 
-    const imgHigh = document.createElement("img");
-    imgHigh.src = p.imageHigh;
-    imgHigh.alt = p.title;
-    imgHigh.loading = "eager";
-    imgHigh.style.cssText = `
-      width: 100%;
-      display: block;
-      position: relative;
-      z-index: 2;
-    `;
+  const img = document.createElement("img");
+  img.src = images[index];
+  img.alt = p.title;
+  img.loading = "eager";
+  img.style.cssText = `
+    width: 100%;
+    display: block;
+  `;
 
-    imgHigh.onload = () => {
-      imgLow.style.opacity = "0";
+  container.appendChild(img);
 
-      setTimeout(() => {
-        imgLow.style.display = "none";
-      }, 300);
-    };
+  const imageHTML = p.link
+    ? `<a href="${p.link}">${container.outerHTML}</a>`
+    : container.outerHTML;
 
-    container.appendChild(imgHigh);
-    container.appendChild(imgLow);
+  const titleHTML = p.link
+    ? `<span><a href="${p.link}">${p.title}</a></span>`
+    : `<span>${p.title}</span>`;
 
-    // Odkaz (volitelný)
-    const imageHTML = p.link
-      ? `<a href="${p.link}">${container.outerHTML}</a>`
-      : container.outerHTML;
+  wrapper.innerHTML = `${imageHTML}${titleHTML}`;
+  grid.appendChild(wrapper);
 
-    // Titulek
-    const titleHTML = p.link
-      ? `<span><a href="${p.link}">${p.title}</a></span>`
-      : `<span>${p.title}</span>`;
+  masonryItems.push(wrapper);
 
-    wrapper.innerHTML = `${imageHTML}${titleHTML}`;
-    grid.appendChild(wrapper);
-  });
+  // 🔁 rotace obrázků (až po prvním loadu)
+  if (images.length > 1) {
+    let timer;
 
-  imagesLoaded(grid, function () {
-    new Masonry(grid, {
-      itemSelector: '.project',
-      columnWidth: '.project',
-      gutter: 30,
-      percentPosition: true
+    img.addEventListener("load", () => {
+      timer = setInterval(() => {
+        index = (index + 1) % images.length;
+        img.src = images[index];
+      }, 1000);
     });
+
+    wrapper.addEventListener("mouseenter", () => clearInterval(timer));
+    wrapper.addEventListener("mouseleave", () => {
+      timer = setInterval(() => {
+        index = (index + 1) % images.length;
+        img.src = images[index];
+      }, 1000);
+    });
+  }
+});
+
+/* Masonry až po načtení PRVNÍCH obrázků */
+imagesLoaded(masonryItems, () => {
+  new Masonry(grid, {
+    itemSelector: ".project",
+    columnWidth: ".project",
+    gutter: 30,
+    percentPosition: true
   });
-  </script>
+});
+</script>
 </body>
 </html>

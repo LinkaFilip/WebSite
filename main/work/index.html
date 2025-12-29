@@ -228,6 +228,7 @@ projects.forEach(p => {
       setTimeout(() => {
         index = (index + 1) % images.length;
         img.src = images[index];
+        img.style.opacity = "1";
       }, 200);
     }
 

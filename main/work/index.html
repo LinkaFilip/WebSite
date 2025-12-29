@@ -189,8 +189,11 @@
       const sizer = document.createElement("img");
       sizer.src = images[0];
       sizer.alt = "";
+      sizer.className = "sizer";
       sizer.style.width = "100%";
       sizer.style.display = "block";
+      sizer.style.opacity = "0";
+      container.appendChild(sizer);
 
       container.appendChild(sizer);
 

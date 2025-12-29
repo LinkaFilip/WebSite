@@ -180,21 +180,22 @@ projects.forEach(p => {
 
   const container = document.createElement("div");
   container.className = "image-wrapper";
-  container.style.position = "relative";
 
   const images = p.previews || [p.imageHigh];
   let index = 0;
 
-  const img = document.createElement("img");
-  img.src = images[index];
-  img.alt = p.title;
-  img.loading = "eager";
-  img.style.width = "100%";
-  img.style.display = "block";
+  const imgA = document.createElement("img");
+  const imgB = document.createElement("img");
 
-  container.appendChild(img);
+  imgA.src = images[0];
+  imgB.src = images[1] || images[0];
 
-  /* odkaz */
+  imgA.className = "top";
+  imgB.className = "bottom";
+
+  container.appendChild(imgB);
+  container.appendChild(imgA);
+
   if (p.link) {
     const link = document.createElement("a");
     link.href = p.link;
@@ -204,44 +205,31 @@ projects.forEach(p => {
     wrapper.appendChild(container);
   }
 
-  /* titulek */
   const title = document.createElement("span");
-  if (p.link) {
-    const titleLink = document.createElement("a");
-    titleLink.href = p.link;
-    titleLink.textContent = p.title;
-    title.appendChild(titleLink);
-  } else {
-    title.textContent = p.title;
-  }
-
+  title.textContent = p.title;
   wrapper.appendChild(title);
+
   grid.appendChild(wrapper);
   masonryItems.push(wrapper);
 
-  /* animace */
   if (images.length > 1) {
-    let timer;
+    let showingA = true;
 
-    function nextImage() {
-      img.style.opacity = "0";
-      setTimeout(() => {
-        index = (index + 1) % images.length;
-        img.src = images[index];
-        img.style.opacity = "1";
-      }, 200);
-    }
+    setInterval(() => {
+      index = (index + 1) % images.length;
 
-    timer = setInterval(nextImage, 1000);
+      const nextImg = showingA ? imgB : imgA;
+      const currentImg = showingA ? imgA : imgB;
 
-    wrapper.addEventListener("mouseenter", () => clearInterval(timer));
-    wrapper.addEventListener("mouseleave", () => {
-      timer = setInterval(nextImage, 1000);
-    });
+      nextImg.src = images[index];
+      nextImg.style.opacity = "1";
+      currentImg.style.opacity = "0";
+
+      showingA = !showingA;
+    }, 1400);
   }
 });
 
-/* Masonry */
 imagesLoaded(masonryItems, () => {
   new Masonry(grid, {
     itemSelector: ".project",
@@ -251,5 +239,6 @@ imagesLoaded(masonryItems, () => {
   });
 });
 </script>
+
 </body>
 </html>

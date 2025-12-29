@@ -182,9 +182,9 @@ projects.forEach(p => {
   container.className = "image-wrapper";
 
   /* 🔑 DŮLEŽITÉ: pevná výška pro Masonry */
-  container.style.aspectRatio = "3 / 4"; // uprav podle poměru náhledů
-  container.style.position = "relative";
-  container.style.overflow = "hidden";
+  imgA.onload = () => {
+    container.style.height = imgA.offsetHeight + "px";
+  };
 
   const images = p.previews || [p.imageHigh];
   let index = 0;

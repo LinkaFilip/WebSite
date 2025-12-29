@@ -181,11 +181,16 @@ projects.forEach(p => {
   const container = document.createElement("div");
   container.className = "image-wrapper";
 
+  /* 🔑 DŮLEŽITÉ: pevná výška pro Masonry */
+  container.style.aspectRatio = "3 / 4"; // uprav podle poměru náhledů
+  container.style.position = "relative";
+  container.style.overflow = "hidden";
+
   const images = p.previews || [p.imageHigh];
   let index = 0;
   let showingA = true;
 
-  /* dva obrázky pro crossfade */
+  /* dva obrázky pro plynulý crossfade */
   const imgA = document.createElement("img");
   const imgB = document.createElement("img");
 
@@ -195,8 +200,18 @@ projects.forEach(p => {
   imgA.alt = p.title;
   imgB.alt = p.title;
 
-  imgA.className = "img top";
-  imgB.className = "img bottom";
+  /* společné styly */
+  [imgA, imgB].forEach(img => {
+    img.style.position = "absolute";
+    img.style.inset = "0";
+    img.style.width = "100%";
+    img.style.height = "100%";
+    img.style.objectFit = "cover";
+    img.style.transition = "opacity 0.4s ease";
+  });
+
+  imgA.style.opacity = "1";
+  imgB.style.opacity = "0";
 
   container.appendChild(imgB);
   container.appendChild(imgA);
@@ -250,7 +265,7 @@ projects.forEach(p => {
   }
 });
 
-/* Masonry */
+/* Masonry – teď už má z čeho počítat */
 imagesLoaded(masonryItems, () => {
   new Masonry(grid, {
     itemSelector: ".project",
@@ -260,6 +275,7 @@ imagesLoaded(masonryItems, () => {
   });
 });
 </script>
+
 
 </body>
 </html>

@@ -195,29 +195,29 @@
       const imgA = document.createElement("img");
       const imgB = document.createElement("img");
 
-//      imgA.src = images[0];
-//      imgB.src = images[1] || images[0];
-//
-//      imgA.alt = p.title;
-//      imgB.alt = p.title;
-//
-//      [imgA, imgB].forEach(img => {
-//        img.style.position = "absolute";
-//        img.style.top = "0";
-//        img.style.left = "0";
-//        img.style.width = "100%";
-//        img.style.height = "100%";
-//        img.style.objectFit = "contain"; // nebo cover, podle fontů
-//        img.style.transition = "opacity 0.4s ease";
-//        img.style.pointerEvents = "none";
-//      });
-//
-//      imgA.style.opacity = "1";
-//      imgB.style.opacity = "0";
-//
-//      container.appendChild(sizer);
-//      container.appendChild(imgB);
-//      container.appendChild(imgA);
+      imgA.src = images[0];
+      imgB.src = images[1] || images[0];
+
+      imgA.alt = p.title;
+      imgB.alt = p.title;
+
+      [imgA, imgB].forEach(img => {
+        img.style.position = "absolute";
+        img.style.top = "0";
+        img.style.left = "0";
+        img.style.width = "100%";
+        img.style.height = "100%";
+        img.style.objectFit = "contain"; // nebo cover, podle fontů
+        img.style.transition = "opacity 0.4s ease";
+        img.style.pointerEvents = "none";
+      });
+
+      imgA.style.opacity = "1";
+      imgB.style.opacity = "0";
+
+      container.appendChild(sizer);
+      container.appendChild(imgB);
+      container.appendChild(imgA);
 
       if (p.link) {
         const link = document.createElement("a");

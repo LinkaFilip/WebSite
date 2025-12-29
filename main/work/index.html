@@ -192,26 +192,10 @@
       sizer.style.width = "100%";
       sizer.style.display = "block";
 
-      const imgA = document.createElement("img");
-      const imgB = document.createElement("img");
-
-      imgA.src = images[0];
-      imgB.src = images[1] || images[0];
-
-      imgA.alt = p.title;
-      imgB.alt = p.title;
-
-      [imgA, imgB].forEach(img => {
-        img.style.display = "block";
-        img.style.width = "100%";
-      });
-
       imgA.style.opacity = "1";
       imgB.style.opacity = "0";
 
       container.appendChild(sizer);
-      container.appendChild(imgB);
-      container.appendChild(imgA);
 
       if (p.link) {
         const link = document.createElement("a");

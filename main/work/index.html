@@ -170,7 +170,7 @@
 
 
   <script src="projects.js"></script>
- <script>
+<script>
 const grid = document.getElementById("project-grid");
 const masonryItems = [];
 
@@ -183,33 +183,44 @@ projects.forEach(p => {
   container.style.position = "relative";
 
   const images = p.previews || [p.imageHigh];
-  let index = 0; // start vždy od prvního obrázku
+  let index = 0;
 
   const img = document.createElement("img");
   img.src = images[index];
   img.alt = p.title;
   img.loading = "eager";
-  img.style.cssText = `
-    width: 100%;
-    display: block;
-    transition: opacity 0.25s ease;
-  `;
+  img.style.width = "100%";
+  img.style.display = "block";
+  img.style.transition = "opacity 0.25s ease";
 
   container.appendChild(img);
 
-  const imageHTML = p.link
-    ? `<a href="${p.link}">${container.outerHTML}</a>`
-    : container.outerHTML;
+  /* odkaz */
+  if (p.link) {
+    const link = document.createElement("a");
+    link.href = p.link;
+    link.appendChild(container);
+    wrapper.appendChild(link);
+  } else {
+    wrapper.appendChild(container);
+  }
 
-  const titleHTML = p.link
-    ? `<span><a href="${p.link}">${p.title}</a></span>`
-    : `<span>${p.title}</span>`;
+  /* titulek */
+  const title = document.createElement("span");
+  if (p.link) {
+    const titleLink = document.createElement("a");
+    titleLink.href = p.link;
+    titleLink.textContent = p.title;
+    title.appendChild(titleLink);
+  } else {
+    title.textContent = p.title;
+  }
 
-  wrapper.innerHTML = `${imageHTML}${titleHTML}`;
+  wrapper.appendChild(title);
   grid.appendChild(wrapper);
-
   masonryItems.push(wrapper);
 
+  /* animace */
   if (images.length > 1) {
     let timer;
 
@@ -231,7 +242,7 @@ projects.forEach(p => {
   }
 });
 
-/* Masonry až po načtení PRVNÍCH obrázků */
+/* Masonry */
 imagesLoaded(masonryItems, () => {
   new Masonry(grid, {
     itemSelector: ".project",

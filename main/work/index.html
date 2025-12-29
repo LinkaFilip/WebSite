@@ -181,11 +181,6 @@ projects.forEach(p => {
   const container = document.createElement("div");
   container.className = "image-wrapper";
 
-  /* 🔑 DŮLEŽITÉ: pevná výška pro Masonry */
-  imgA.onload = () => {
-    container.style.height = imgA.offsetHeight + "px";
-  };
-
   const images = p.previews || [p.imageHigh];
   let index = 0;
   let showingA = true;
@@ -212,7 +207,10 @@ projects.forEach(p => {
 
   imgA.style.opacity = "1";
   imgB.style.opacity = "0";
-
+  
+  imgA.onload = () => {
+    container.style.height = imgA.offsetHeight + "px";
+  };
   container.appendChild(imgB);
   container.appendChild(imgA);
 

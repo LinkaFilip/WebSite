@@ -241,13 +241,15 @@
 //     }
    });
 
-imagesLoaded(masonryItems, () => {
-  new Masonry(grid, {
+imagesLoaded(grid, function () {
+  const msnry = new Masonry(grid, {
     itemSelector: ".project",
     columnWidth: ".project",
     gutter: 30,
     percentPosition: true
   });
+
+  msnry.layout();
 });
   </script>
 </body>

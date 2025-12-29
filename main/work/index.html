@@ -170,76 +170,49 @@
     <div class="grid" id="project-grid"></div>
   </main>
   <script src="projects.js"></script>
-  <script>
-    const grid = document.getElementById("project-grid");
-    const masonryItems = [];
+<script>
+const grid = document.getElementById("project-grid");
 
-    projects.forEach(p => {
-      const wrapper = document.createElement("div");
-      wrapper.className = "project";
+projects.forEach(p => {
+  const wrapper = document.createElement("div");
+  wrapper.className = "project";
 
-      const container = document.createElement("div");
-      container.className = "image-wrapper";
-      container.style.position = "relative";
+  const container = document.createElement("div");
+  container.className = "image-wrapper";
+  container.style.position = "relative";
 
-      const images = p.previews || [p.imageHigh];
-      let index = 0;
-      let showingA = true;
+  const images = p.previews || [p.imageHigh];
 
-      const sizer = document.createElement("img");
-      sizer.src = images[0];
-      sizer.alt = "";
-      sizer.style.width = "100%";
-      sizer.style.display = "block";
+  const sizer = document.createElement("img");
+  sizer.src = images[0];
+  sizer.alt = "";
+  sizer.style.width = "100%";
+  sizer.style.display = "block";
 
-      container.appendChild(sizer);
+  container.appendChild(sizer);
 
-      if (p.link) {
-        const link = document.createElement("a");
-        link.href = p.link;
-        link.appendChild(container);
-        wrapper.appendChild(link);
-      } else {
-        wrapper.appendChild(container);
-      }
+  if (p.link) {
+    const link = document.createElement("a");
+    link.href = p.link;
+    link.appendChild(container);
+    wrapper.appendChild(link);
+  } else {
+    wrapper.appendChild(container);
+  }
 
-      const title = document.createElement("span");
-      if (p.link) {
-        const titleLink = document.createElement("a");
-        titleLink.href = p.link;
-        titleLink.textContent = p.title;
-        title.appendChild(titleLink);
-      } else {
-        title.textContent = p.title;
-      }
+  const title = document.createElement("span");
+  if (p.link) {
+    const titleLink = document.createElement("a");
+    titleLink.href = p.link;
+    titleLink.textContent = p.title;
+    title.appendChild(titleLink);
+  } else {
+    title.textContent = p.title;
+  }
 
-      wrapper.appendChild(title);
-      grid.appendChild(wrapper);
-      masonryItems.push(wrapper);
-
-      /* === 3️⃣ ANIMACE === */
-//     if (images.length > 1) {
-//       let timer = setInterval(nextImage, 1400);
-//
-//       function nextImage() {
-//         index = (index + 1) % images.length;
-//
-//         const nextImg = showingA ? imgB : imgA;
-//         const currentImg = showingA ? imgA : imgB;
-//
-//         nextImg.src = images[index];
-//         nextImg.style.opacity = "1";
-//         currentImg.style.opacity = "0";
-//
-//         showingA = !showingA;
-//       }
-//
-//       wrapper.addEventListener("mouseenter", () => clearInterval(timer));
-//       wrapper.addEventListener("mouseleave", () => {
-//         timer = setInterval(nextImage, 1400);
-//       });
-//     }
-   });
+  wrapper.appendChild(title);
+  grid.appendChild(wrapper);
+});
 
 imagesLoaded(grid, function () {
   const msnry = new Masonry(grid, {
@@ -251,7 +224,8 @@ imagesLoaded(grid, function () {
 
   msnry.layout();
 });
-  </script>
+</script>
+
 </body>
 
 </html>

@@ -202,14 +202,8 @@
       imgB.alt = p.title;
 
       [imgA, imgB].forEach(img => {
-        img.style.position = "absolute";
-        img.style.top = "0";
-        img.style.left = "0";
+        img.style.display = "block";
         img.style.width = "100%";
-        img.style.height = "100%";
-        img.style.objectFit = "contain"; // nebo cover, podle fontů
-        img.style.transition = "opacity 0.4s ease";
-        img.style.pointerEvents = "none";
       });
 
       imgA.style.opacity = "1";

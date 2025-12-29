@@ -63,7 +63,7 @@ html, body {
   position: relative;
   height: auto;
   display: block;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 .image-wrapper img:not(.sizer) {

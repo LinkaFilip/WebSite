@@ -166,7 +166,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     main>article>.article-title-section>h2 {
-        flex-basis: 70%;
+        flex-basis: 100%;
         font-size: 1.75em;
         line-height: 1.5rem;
     }
@@ -183,7 +183,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     main>article>.article-description-section>p {
         font-size: 1rem;
     }
-    main>article>.article-image-section>img{        
+    main>article>.article-image-section>img{
         padding-top: 0px !important;
         object-fit: contain;
         grid-row: span 0 !important;
@@ -207,7 +207,7 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
 
     main>article>.article-title-section>h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 2.6rem;
     }
 

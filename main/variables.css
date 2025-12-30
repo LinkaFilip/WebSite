@@ -107,12 +107,10 @@ nav .nav-section {
     background-color: #2c3a47;
 }
 #nav-link-section {
-    flex-basis: 100%;
     gap: 6rem;
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
-    justify-content: flex-end;
 }
 
 #nav-social-section {
@@ -135,7 +133,6 @@ nav .nav-section {
     }
 
     #nav-link-section {
-        flex-basis: 100%;
         gap: 3rem;
     }
 }
@@ -169,7 +166,6 @@ nav .nav-section {
     nav .nav-section {
         border-left: none;
         padding: 1.5rem 1rem;
-        flex-basis: calc(100% * 0.3);
     }
 
     #nav-logo-section>a>i {

@@ -337,5 +337,5 @@ side {
     text-decoration-color: rgb(109 125 146);
 }
 .RuGYC60{
-object-fit: cover;
+object-fit: cover !important;
 }

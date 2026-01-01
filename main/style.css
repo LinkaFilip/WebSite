@@ -117,10 +117,10 @@ main>article>.article-title-section * {
 }
 
 main>article>.article-title-section>h2 {
-    flex-basis: 50%;
+    flex-basis: 100%;
     font-family: "Mandator", sans-serif;
-    font-size: 3.5rem;
-    line-height: 5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     margin: 0px;
     font-weight: 100;
 }

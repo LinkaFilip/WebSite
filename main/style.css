@@ -64,7 +64,7 @@ main>article>.article-title-section, main>article>.article-nav-section {
 }
 
 main>article>.article-image-section>img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     object-position: center;
     background-color: #ffffff;

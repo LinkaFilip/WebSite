@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Protři si oči a počítej do tří",
-    imageLow: "/images/Ponor-small.webp",
+    imageLow: "/images/protri-si-oci.webp",
     imageHigh: "/images/protri-si-oci.webp",
     link: "/protri-so-oci/"
   },

@@ -8,7 +8,8 @@
   font-family: "Mandator";
   font-display: swap;
   font-weight: 400;
-  src: url(/mandator.woff2);
+  src: url(trest-Regular.woff2);
+  /*src: url(/mandator.woff2);*/
 }
 
 @font-face {

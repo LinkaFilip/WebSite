@@ -3,19 +3,19 @@ const projects = [
     title: "Protři si oči a počítej do tří",
     imageLow: "/images/protri-si-oci.webp",
     imageHigh: "/images/protri-si-oci.webp",
-    link: "/protri-so-oci/"
+    //link: "/protri-so-oci/"
   },
   {
     title: "Veneziana",
     imageLow: "/images/Veneziana-small.webp",
     imageHigh: "/images/Veneziana-small.webp",
-    link: "/veneziana/"
+    //link: "/veneziana/"
   },
   {
     title: "Potmě vše kolem zčerná (in the darkness all around turns black)",
     imageLow: "/images/po-tme.webp",
     imageHigh: "/images/po-tme.webp",
-    link: "/in-the-darkness-all-around-turns-black/"
+    //link: "/in-the-darkness-all-around-turns-black/"
   },
   {
     title: "The House",

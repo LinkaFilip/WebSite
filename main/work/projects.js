@@ -1,15 +1,15 @@
 const projects = [
   {
-    title: "Veneziana",
-    imageLow: "/images/Veneziana-small.webp",
-    imageHigh: "/images/Veneziana-small.webp",
-    link: "/veneziana/"
-  },
-  {
     title: "Protři si oči a počítej do tří",
     imageLow: "/images/protri-si-oci.webp",
     imageHigh: "/images/protri-si-oci.webp",
     link: "/protri-so-oci/"
+  },
+  {
+    title: "Veneziana",
+    imageLow: "/images/Veneziana-small.webp",
+    imageHigh: "/images/Veneziana-small.webp",
+    link: "/veneziana/"
   },
   {
     title: "Potmě vše kolem zčerná (in the darkness all around turns black)",

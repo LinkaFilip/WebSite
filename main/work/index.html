@@ -186,16 +186,17 @@
       let index = 0;
       let showingA = true;
 
-      const sizer = document.createElement("img");
-      sizer.src = images[0];
-      sizer.alt = "";
-      sizer.className = "sizer";
-      sizer.style.width = "100%";
-      sizer.style.display = "block";
-      sizer.style.opacity = "1";
-      container.appendChild(sizer);
+      const imgA = document.createElement("img");
+      imgA.src = images[0];
+      imgA.alt = "";
+      imgA.className = "sizer";
+      container.appendChild(imgA);
 
-      container.appendChild(sizer);
+      const imgB = document.createElement("img");
+      imgB.src = images[1] || images[0];
+      imgB.alt = "";
+      imgB.className = "sizer top";
+      container.appendChild(imgB);
 
       if (p.link) {
         const link = document.createElement("a");
@@ -220,28 +221,27 @@
       grid.appendChild(wrapper);
       masonryItems.push(wrapper);
 
-      /* === 3️⃣ ANIMACE === */
-//     if (images.length > 1) {
-//       let timer = setInterval(nextImage, 1400);
-//
-//       function nextImage() {
-//         index = (index + 1) % images.length;
-//
-//         const nextImg = showingA ? imgB : imgA;
-//         const currentImg = showingA ? imgA : imgB;
-//
-//         nextImg.src = images[index];
-//         nextImg.style.opacity = "1";
-//         currentImg.style.opacity = "0";
-//
-//         showingA = !showingA;
-//       }
-//
-//       wrapper.addEventListener("mouseenter", () => clearInterval(timer));
-//       wrapper.addEventListener("mouseleave", () => {
-//         timer = setInterval(nextImage, 1400);
-//       });
-//     }
+      if (images.length > 1) {
+        let timer = setInterval(nextImage, 2000 + Math.random() * 1000);
+
+        function nextImage() {
+          index = (index + 1) % images.length;
+
+          const nextImg = showingA ? imgB : imgA;
+          const currentImg = showingA ? imgA : imgB;
+
+          nextImg.src = images[index];
+          nextImg.classList.add("top");
+          currentImg.classList.remove("top");
+
+          showingA = !showingA;
+        }
+
+        wrapper.addEventListener("mouseenter", () => clearInterval(timer));
+        wrapper.addEventListener("mouseleave", () => {
+          timer = setInterval(nextImage, 2000 + Math.random() * 1000);
+        });
+      }
    });
 
 imagesLoaded(grid, function () {

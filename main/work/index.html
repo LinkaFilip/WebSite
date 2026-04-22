@@ -184,19 +184,47 @@
 
       const images = p.previews || [p.imageHigh];
       let index = 0;
-      let showingA = true;
+      let showingA = images.length > 1;
+      let timer;
 
       const imgA = document.createElement("img");
       imgA.src = images[0];
       imgA.alt = "";
       imgA.className = "sizer";
+      imgA.style.opacity = "1";
       container.appendChild(imgA);
 
-      const imgB = document.createElement("img");
-      imgB.src = images[1] || images[0];
-      imgB.alt = "";
-      imgB.className = "sizer top";
-      container.appendChild(imgB);
+      if (images.length > 1) {
+        const imgB = document.createElement("img");
+        imgB.src = images[1] || images[0];
+        imgB.alt = "";
+        imgB.style.opacity = "0";
+        imgB.style.position = "absolute";
+        imgB.style.top = "0";
+        imgB.style.left = "0";
+        imgB.style.width = "100%";
+        container.appendChild(imgB);
+
+        function nextImage() {
+          index = (index + 1) % images.length;
+
+          const nextImg = showingA ? imgB : imgA;
+          const currentImg = showingA ? imgA : imgB;
+
+          nextImg.src = images[index];
+          nextImg.style.opacity = "1";
+          currentImg.style.opacity = "0";
+
+          showingA = !showingA;
+        }
+
+        timer = setInterval(nextImage, 2000 + Math.random() * 1000);
+
+        wrapper.addEventListener("mouseenter", () => clearInterval(timer));
+        wrapper.addEventListener("mouseleave", () => {
+          timer = setInterval(nextImage, 2000 + Math.random() * 1000);
+        });
+      }
 
       if (p.link) {
         const link = document.createElement("a");
@@ -220,28 +248,6 @@
       wrapper.appendChild(title);
       grid.appendChild(wrapper);
       masonryItems.push(wrapper);
-
-      if (images.length > 1) {
-        let timer = setInterval(nextImage, 2000 + Math.random() * 1000);
-
-        function nextImage() {
-          index = (index + 1) % images.length;
-
-          const nextImg = showingA ? imgB : imgA;
-          const currentImg = showingA ? imgA : imgB;
-
-          nextImg.src = images[index];
-          nextImg.classList.add("top");
-          currentImg.classList.remove("top");
-
-          showingA = !showingA;
-        }
-
-        wrapper.addEventListener("mouseenter", () => clearInterval(timer));
-        wrapper.addEventListener("mouseleave", () => {
-          timer = setInterval(nextImage, 2000 + Math.random() * 1000);
-        });
-      }
    });
 
 imagesLoaded(grid, function () {

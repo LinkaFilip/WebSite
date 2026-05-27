@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script>
-      requestIdleCallback(() => {
-        const script = document.createElement("script");
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF";
-        script.async = true;
-        document.head.appendChild(script);
+<head>
+    <script>
+        requestIdleCallback(() => {
+            const script = document.createElement("script");
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-6HDQEQGMNF";
+            script.async = true;
+            document.head.appendChild(script);
 
-        script.onload = () => {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
+            script.onload = () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag("js", new Date());
+                gtag("config", "G-6HDQEQGMNF");
+            };
+        });
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
             dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "G-6HDQEQGMNF");
-        };
-      });
-        </script>
-        <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-6HDQEQGMNF");
-        </script>
-        <!-- Structured Data -->
-        <script type="application/ld+json">
+        }
+        gtag("js", new Date());
+        gtag("config", "G-6HDQEQGMNF");
+    </script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -111,196 +111,197 @@
         ]
       }
         </script>
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Official portfolio of Filip Linka, graphic designer focusing on printing and typography">
-        <meta name="author" content="Filip Linka">
-        <meta name="publisher" content="Filip Linka">
-        <link rel="canonical" href="https://filipl.art/">
-        <meta name="p:domain_verify" content="e1791406e9c7b7f61c2d6859defa997d">
-        <meta name="theme-color" content="rgb(5, 10, 24)">
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://filipl.art/">
-        <meta property="og:title" content="Filip Linka — prints and typography">
-        <meta property="og:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography">
-        <meta property="og:image" content="https://filipl.art/images/profile_photo.jpg">
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://filipl.art/">
-        <meta name="twitter:title" content="Filip Linka — prints and typography">
-        <meta name="twitter:description" content="Portfolio of Filip Linka, graphic designer focusing on printing and typography">
-        <meta name="twitter:image" content="https://filipl.art/images/profile_photo.jpg">
-        <!-- Title & Favicon -->
-        <title>Filip Linka — prints and typography</title>
-        <link rel="author" href="https://filipl.art/#person">
-        <link
-            rel="icon"
-            type="image/png"
-            href="/images/favicon-96x96.png"
-            sizes="96x96"
-        >
-        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-        <link rel="shortcut icon" href="/images/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        <meta name="apple-mobile-web-app-title" content="filipl.art">
-        <link rel="manifest" href="/images/site.webmanifest">
-        <link rel="preconnect" href="https://filipl.art/images/wrongly_developed_dreams04.webp">
-        <!-- Styles -->
-        <link rel="stylesheet" href="/variables.css">
-        <link rel="stylesheet" href="/style.css">
-        <noscript>
-            <link rel="preload" href="/style.css">
-        </noscript>
-        <meta name="robots" content="index, follow">
-    </head>
-    <body class="body">
-        <header>
-            <nav data-toggled="false" data-transitionable="false">
-                <div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
-                    <a href="/">
-                        <h1 style="font-size: 1rem">Filip Linka</h1>
-                    </a>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official portfolio of Filip Linka, graphic designer focusing on printing and typography">
+    <meta name="author" content="Filip Linka">
+    <meta name="publisher" content="Filip Linka">
+    <link rel="canonical" href="https://filipl.art/">
+    <meta name="p:domain_verify" content="e1791406e9c7b7f61c2d6859defa997d">
+    <meta name="theme-color" content="rgb(5, 10, 24)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://filipl.art/">
+    <meta property="og:title" content="Filip Linka — prints and typography">
+    <meta property="og:description"
+        content="Portfolio of Filip Linka, graphic designer focusing on printing and typography">
+    <meta property="og:image" content="https://filipl.art/images/profile_photo.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://filipl.art/">
+    <meta name="twitter:title" content="Filip Linka — prints and typography">
+    <meta name="twitter:description"
+        content="Portfolio of Filip Linka, graphic designer focusing on printing and typography">
+    <meta name="twitter:image" content="https://filipl.art/images/profile_photo.jpg">
+    <!-- Title & Favicon -->
+    <title>Filip Linka — prints and typography</title>
+    <link rel="author" href="https://filipl.art/#person">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="filipl.art">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="preconnect" href="https://filipl.art/images/wrongly_developed_dreams04.webp">
+    <!-- Styles -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+    <noscript>
+        <link rel="preload" href="/style.css">
+    </noscript>
+    <meta name="robots" content="index, follow">
+</head>
+
+<body class="body">
+    <header>
+        <nav data-toggled="false" data-transitionable="false">
+            <div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
+                <a href="./">
+                    <h1 style="font-size: 1rem">Filip Linka</h1>
+                </a>
+            </div>
+            <div id="nav-mobile-section">
+                <div id="nav-link-section" class="nav-section">
+                    <a href="work">work</a>
+                    <a class="specified" href="contact">contact</a>
                 </div>
-                <div id="nav-mobile-section">
-                    <div id="nav-link-section" class="nav-section">
-                        <a href="/work/">work</a>
-                        <a class="specified" href="/contact/">contact</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main id="main">
-            <!--<article data-index="1" data-status="active">
-                <div class="article-description-section article-section">
-                    <p>
-                        <span class="bold">The house</span>
-                       is an unconventional font. It can be used for posters, identity, webdesign or book titles. Vojtěch Preissig designed a typeface that he claimed was cubist. The typeface replaces curves with a wedge-shaped system of elements, which he also uses in a more moderate form in his Roman typeface.
-                </div>
-                <div id="random" class="article-image-section article-section">
-                    <img src="/images/theHouse_showcase.webp" loading="lazy" alt="The house">
-                </div>
-                <div class="article-nav-section article-section">
-                    <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                        <span>←</span>
-                    </button>
-                    <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                        <span>→</span>
-                    </button>
-                </div>
-                <div class="article-title-section article-section">
-                    <h2>The House</h2>
-                </div>
-            </article>
-            <article data-index="2" data-status="inactive" class="dreams reu97oq">
-                <div class="article-title-section article-section">
-                    <h2 class="zt5U34">
-                        <a class="r3Ef5" href="/wrongly_developed_dreams/">
-                            Wrongly developed dreams or 4 harbingers of strangled sadness or
-              when angels deserve only death
-                        </a
-            >
-                    </h2>
-                </div>
-                <div id="random" class="article-image-section article-section ruGhl4">
-                    <img class="RuGYC60"
-                        src="/images/wrongly_developed_dreams04.webp"
-                        loading="eager"
-                        alt="Wrongly developed dreams">
-                </div>
-                <div class="article-nav-section article-section">
-                    <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                        <span>←</span>
-                    </button>
-                    <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                        <span>→</span>
-                    </button>
-                </div>
-            </article>
-            <article data-index="3" data-status="inactive">
-                <div class="article-description-section article-section">
-                    <p>
-                        <span class="bold">Mandator</span>
-                        is a stereotypical sans-serif
-            font. The goal was to design typeface, that would be suitable for
-            handbooks, book titles, bilboards but even on web as system font (it
-            is used on this site).
-                        <br>Mandator contains variety of ligatures, numbers, superior letters, special symbols, different weights and italic, stylistic sets, arrows, etc...
-                    </p>
-                    <button class="button" onclick="window.location.href='/mandator/'">
-                        <a href="/mandator/">Read more about Mandator</a>
-                    </button>
-                </div>
-                <div id="random" class="article-image-section article-section">
-                    <img src="/images/mandator_showcase.webp" loading="lazy" alt="Mandator">
-                </div>
-                <div class="article-nav-section article-section">
-                    <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                        <span>←</span>
-                    </button>
-                    <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                        <span>→</span>
-                    </button>
-                </div>
-                <div class="article-title-section article-section">
-                    <h2>Mandator</h2>
-                </div>
-            </article> -->
-            <article data-index="2" data-status="inactive">
-                <div class="article-description-section article-section">
-                    <p>
-                        <span class="bold">Ponor</span>
-                        is a serif book font. It is
-            originating from the 16ᵗʰ century typeface called Garamond
-            (especially from the metal type)... It does contain czech, french or
-            some of polish accents, numbers, superior letters, ligatures,
-            special symbols, etc...
-                    </p>
-                </div>
-                <div id="random" class="article-image-section article-section">
-                    <img src="/images/ponor_showcase.webp" loading="lazy" alt="Ponor">
-                </div>
-                <div class="article-nav-section article-section">
-                    <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                        <span>←</span>
-                    </button>
-                    <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                        <span>→</span>
-                    </button>
-                </div>
-                <div class="article-title-section article-section">
-                    <h2>Ponor</h2>
-                </div>
-            </article>
-            <article data-index="3" data-status="inactive">
-                <div class="article-description-section article-section">
-                    <p>
-                        Rather than creating a clean, modern reinterpretation, I chose to
-            embrace the irregularities — slight ink bleed, uneven proportions,
-            and the tactile feel of lead type pressed into paper. These
-            qualities give the typeface its voice, and I wanted to ensure that
-            voice remained strong in its new, digital form. The result is a
-            typeface that respects its origins while living comfortably in
-            today’s design tools and workflows.
-                    </p>
-                </div>
-                <div id="random" class="article-image-section article-section">
-                    <img src="/images/arlington_showcase.webp" loading="lazy" alt="Arlington">
-                </div>
-                <div class="article-nav-section article-section">
-                    <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                        <span>←</span>
-                    </button>
-                    <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                        <span>→</span>
-                    </button>
-                </div>
-                <div class="article-title-section article-section">
-                    <h2>Arlington</h2>
-                </div>
-            </article>
-        </main>
-    </body>
-    <script src="/script.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <!--<article data-index="1" data-status="active" class="theHouse">
+            <div class="article-description-section article-section">
+                <p>
+                    <span class="bold">The house</span>
+                    is an unconventional font. It can be used for posters, identity, webdesign or book titles. Vojtěch
+                    Preissig designed a typeface that he claimed was cubist. The typeface replaces curves with a
+                    wedge-shaped system of elements, which he also uses in a more moderate form in his Roman typeface.
+            </div>
+            <div id="random" class="article-image-section article-section">
+                <img src="images/theHouse_showcase.webp" loading="lazy" alt="The house">
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <span>←</span>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>The House</h2>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive" class="dreams reu97oq">
+            <div class="article-title-section article-section">
+                <h2 class="zt5U34">
+                    <a class="r3Ef5" href="/wrongly_developed_dreams/">
+                        Wrongly developed dreams or 4 harbingers of strangled sadness or
+                        when angels deserve only death
+                    </a </h2>
+            </div>
+            <div id="random" class="article-image-section article-section ruGhl4">
+                <img class="RuGYC60" src="images/wrongly_developed_dreams04.webp" loading="eager"
+                    alt="Wrongly developed dreams">
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <span>←</span>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <span>→</span>
+                </button>
+            </div>
+        </article>
+        <article data-index="3" data-status="inactive">
+            <div class="article-description-section article-section">
+                <p>
+                    <span class="bold">Mandator</span>
+                    is a stereotypical sans-serif
+                    font. The goal was to design typeface, that would be suitable for
+                    handbooks, book titles, bilboards but even on web as system font (it
+                    is used on this site).
+                    <br>Mandator contains variety of ligatures, numbers, superior letters, special symbols, different
+                    weights and italic, stylistic sets, arrows, etc...
+                </p>
+                <button class="button" onclick="window.location.href='/mandator/'">
+                    <a href="/mandator/">Read more about Mandator</a>
+                </button>
+            </div>
+            <div id="random" class="article-image-section article-section">
+                <img src="/images/mandator_showcase.webp" loading="lazy" alt="Mandator">
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <span>←</span>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Mandator</h2>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive">
+            <div class="article-description-section article-section">
+                <p>
+                    <span class="bold">Ponor</span>
+                    is a serif book font. It is
+                    originating from the 16ᵗʰ century typeface called Garamond
+                    (especially from the metal type)... It does contain czech, french or
+                    some of polish accents, numbers, superior letters, ligatures,
+                    special symbols, etc...
+                </p>
+            </div>
+            <div id="random" class="article-image-section article-section">
+                <img src="images/ponor_showcase.webp" loading="lazy" alt="Ponor">
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <span>←</span>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Ponor</h2>
+            </div>
+        </article>
+        <article data-index="3" data-status="inactive">
+            <div class="article-description-section article-section">
+                <p>
+                    Rather than creating a clean, modern reinterpretation, I chose to
+                    embrace the irregularities — slight ink bleed, uneven proportions,
+                    and the tactile feel of lead type pressed into paper. These
+                    qualities give the typeface its voice, and I wanted to ensure that
+                    voice remained strong in its new, digital form. The result is a
+                    typeface that respects its origins while living comfortably in
+                    today’s design tools and workflows.
+                </p>
+            </div>
+            <div id="random" class="article-image-section article-section">
+                <img src="images/arlington_showcase.webp" loading="lazy" alt="Arlington">
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <span>←</span>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Arlington</h2>
+            </div>
+        </article>-->
+    </main>
+</body>
+<script src="projectsData.js"></script>
+<script src="script.js"></script>
+
 </html>
+

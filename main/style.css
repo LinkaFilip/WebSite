@@ -248,12 +248,11 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
 
 .active {
     transition: .3s;
-    transform: rotate(90deg);
 }
 
-.unactive {
+.inactive {
     transition: .3s;
-    transform: rotate(0deg);
+    transform: translateX(-100%);
 }
 side {
     height: 100vh;

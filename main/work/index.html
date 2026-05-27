@@ -153,9 +153,9 @@
 <body>
   <header>
     <nav data-toggled="false" data-transitionable="false">
-      <div id="nav-logo-section" class="nav-section">
-        <a href="/">
-          <h1 style="font-size: 1rem;">Filip Linka</h1>
+      <div id="nav-logo-section" class="nav-section" onclick="functionToggle()">
+        <a href="./">
+          <h1 style="font-size: 1rem">Filip Linka</h1>
         </a>
       </div>
       <div id="nav-mobile-section">
@@ -248,18 +248,18 @@
       wrapper.appendChild(title);
       grid.appendChild(wrapper);
       masonryItems.push(wrapper);
-   });
+    });
 
-imagesLoaded(grid, function () {
-  const msnry = new Masonry(grid, {
-    itemSelector: ".project",
-    columnWidth: ".project",
-    gutter: 30,
-    percentPosition: true
-  });
+    imagesLoaded(grid, function () {
+      const msnry = new Masonry(grid, {
+        itemSelector: ".project",
+        columnWidth: ".project",
+        gutter: 30,
+        percentPosition: true
+      });
 
-  msnry.layout();
-});
+      msnry.layout();
+    });
   </script>
 </body>
 

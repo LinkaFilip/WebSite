@@ -14,7 +14,7 @@ window.panels = [
   {
     title: "Wrongly developed dreams",
     linkHref: null,
-    descriptionHtml: `Wrongly developed dreams or 4 harbingers of strangled sadness or when angels deserve only death`.trim(),
+    descriptionHtml: ` or 4 harbingers of strangled sadness or when angels deserve only death`.trim(),
     imageSrc: "images/wrongly_developed_dreams04.webp",
     imageAlt: "Wrongly developed dreams",
     imageId: "random",
@@ -44,7 +44,7 @@ window.panels = [
   {
     title: "Arlington",
     linkHref: null,
-    descriptionHtml: `Rather than creating a clean, modern reinterpretation, I chose to embrace the irregularities — slight ink bleed, uneven proportions, and the tactile feel of lead type pressed into paper. These qualities give the typeface its voice, and I wanted to ensure that voice remained strong in its new, digital form. The result is a typeface that respects its origins while living comfortably in today’s design tools and workflows.`.trim(),
+    descriptionHtml: ` — rather than creating a clean, modern reinterpretation, I chose to embrace the irregularities — slight ink bleed, uneven proportions, and the tactile feel of lead type pressed into paper. These qualities give the typeface its voice, and I wanted to ensure that voice remained strong in its new, digital form. The result is a typeface that respects its origins while living comfortably in today’s design tools and workflows.`.trim(),
     imageSrc: "images/arlington_showcase.webp",
     imageAlt: "Arlington",
     imageId: "random",

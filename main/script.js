@@ -82,8 +82,20 @@
     descSection.className = 'article-description-section article-section';
 
     const p = document.createElement('p');
-    p.innerHTML = panel.descriptionHtml;
+
+    // Render: "Title + paragraph" with the title visually bold (as in your commented HTML).
+    // `descriptionHtml` is expected to be HTML string; we prepend a <span class="bold">.</span>
+    const titleEscaped = String(panel.title ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '<')
+      .replaceAll('>', '>')
+      .replaceAll('"', '"')
+      .replaceAll("'", '&#039;');
+
+    p.innerHTML = `<span class="bold">${titleEscaped}</span> ${panel.descriptionHtml}`;
+
     descSection.appendChild(p);
+
 
     const ctaBtn = panel.cta;
     if (ctaBtn) {
